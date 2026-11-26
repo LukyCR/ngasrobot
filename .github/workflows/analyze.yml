@@ -1,0 +1,35 @@
+name: NGAS Online Robot
+
+on:
+  schedule:
+    # Spouští se každých 30 minut v pracovní dny (Po–Pá)
+    - cron: '*/30 * * * 1-5'
+  workflow_dispatch: # Umožní ruční spuštění tlačítkem kdykoliv
+
+permissions:
+  contents: write
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Načtení repozitáře
+        uses: actions/checkout@v4
+
+      - name: Nastavení Pythonu
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalace knihoven
+        run: pip install -r requirements.txt
+
+      - name: Spuštění analýzy NGAS
+        run: python analyze.py
+
+      - name: Uložení výsledků (data.json)
+        run: |
+          git config --local user.email "bot@github.com"
+          git config --local user.name "NGAS Robot"
+          git add data.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update NGAS signal" && git push)
