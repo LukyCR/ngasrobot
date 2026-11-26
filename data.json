@@ -1,11 +1,11 @@
 {
-  "updated_at": "26.11.2026 22:41 SEČ",
+  "updated_at": "26.11.2026 23:43 SEČ",
   "symbol": "NG=F (Henry Hub Futures)",
   "price": 3.68,
   "change_pct": 12.57,
   "signal": "LONG",
   "action_cz": "OTEVŘÍT LONG (KOUPIT)",
-  "score": 44,
+  "score": 47,
   "plan": {
     "entry": 3.68,
     "sl": 3.631,
@@ -80,15 +80,21 @@
   "warnings": [],
   "news": [
     {
+      "title": "Bridging the Grid: Solar, Storage, and Natural Gas Solutions - Mexico Business News",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQejNnUlBRS3M0Z2lENVRTNWktaGxrLUF4akI3bHhRU01sVEFGUHhlQWwxQnZGN09wdEpMMFJjbDRlY3M5aDdtdXNUdmxUckcwWGFYNWtlZjNKbGlsVEFPSFI1WEV4SlRkczljSVBpY3RReTZfd0txOGlBQjE3NG1FMDVSUGpxWjJDMDF0QXlNZDBNQ2p2WjFTZQ?oc=5",
+      "date": "Thu, 26 Nov 2026 17:04:07 GMT",
+      "sentiment": "NEUTRAL"
+    },
+    {
       "title": "Barchart- Is Natural Gas Inexpensive? - Barchart.com",
       "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPZUxWS1ZWUFpERFlSSXlGRHJjRXR5Y1ZOUmJWT3BVbTdRYUZxdWpYRlFNTW92U2dMRWlfYTUxZk9FT1ZVME1aQk44UGN5OTVzWndBc1ZxUlNFcGNySUM2em05ZVloakFvUlJXOUljc0xWeHFMYnd5NEs4N2ItOEN0UXpTbkNTUQ?oc=5",
       "date": "Thu, 26 Nov 2026 15:00:02 GMT",
       "sentiment": "NEUTRAL"
     },
     {
-      "title": "Bridging the Grid: Solar, Storage, and Natural Gas Solutions - Mexico Business News",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQejNnUlBRS3M0Z2lENVRTNWktaGxrLUF4akI3bHhRU01sVEFGUHhlQWwxQnZGN09wdEpMMFJjbDRlY3M5aDdtdXNUdmxUckcwWGFYNWtlZjNKbGlsVEFPSFI1WEV4SlRkczljSVBpY3RReTZfd0txOGlBQjE3NG1FMDVSUGpxWjJDMDF0QXlNZDBNQ2p2WjFTZQ?oc=5",
-      "date": "Thu, 26 Nov 2026 17:04:07 GMT",
+      "title": "Natural Gas Price Forecast: Breakout Faces Critical Support Test - FXEmpire",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOeTB2NmN5M0hxaU9LalppWXNYSHN2aG1heXREVmFVY3ZFSGJVUjBjNVJWT2tyUWVqdDdZWWRSSS1WX0F0YmJUM2tPT2FaSHl2eDYzQkRCYzZTZmRvbUtNXy12UTZBWlIxMlQ1MFNkUnBhZGV5ZS1nRnJ3SzdGVmpkUXFzNWZ3QTlLeGN3Q2hxT1N2d3ZmcDJXR0ZERHFITnI1c0x5VlB0cGxXWnJpN2ZOSXYtd18?oc=5",
+      "date": "Thu, 26 Nov 2026 21:56:57 GMT",
       "sentiment": "NEUTRAL"
     },
     {
@@ -96,6 +102,12 @@
       "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPUFdzUWROOVNaTlFYZFdkTlRFZndORXA3RFVoTkhIWTFpN0hjT01nQV93ODFxRHlYN3dsdzFXYy04b3dlRFlIY0R0cGk2dzRGdTd6TGZmRDlnazc3Z01lTEU0N1dvWHdVMjI2UnRmbjFpMjRfb0VSeTVqSUpCVnBVLU5oNHZ5SWJZUUM5ZWlUZW1NQnpXTlNrcG9icVdBVEx0LVZXVlp0bW9SYnpfaXNRRktMTQ?oc=5",
       "date": "Thu, 26 Nov 2026 12:17:04 GMT",
       "sentiment": "BEARISH"
+    },
+    {
+      "title": "More than 200,000 plug-in carbon monoxide and natural gas detectors recalled - rocketcitynow.com",
+      "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOakpwdmdOWnpkaG14cUJZMXZDcnVzY0tMVDRhY2cyREVwaFJidm9wZG1KVUtQUENMQUsxV1pobFlSRXVYSVZZTTU2V2hxWWxWdWQ2dWVablVuZ1l0ak1Ya0o1d01tR3hjR2dHb05PMDVyVk9ZQzJXRExVUGdheEludDV0NmJWWXh5QXFfbVRPS1pFX3lhNzVmVzdJUGdwcWgwcC1ZY1FQRmxoS1NRejJCbU0xaGlwYmN1UHJmd2hLWGJJZDF1MHgwbzZTazE0dkpBeC1SVTZTVlBGNkhKWElycXVPOUc4ejFXelEydGpCYXF5bVloS2pVOHhWNU45azNWSEE?oc=5",
+      "date": "Thu, 26 Nov 2026 21:47:00 GMT",
+      "sentiment": "NEUTRAL"
     },
     {
       "title": "The Download: Better bionic hands and AI’s natural-gas boom - MIT Technology Review",
@@ -110,21 +122,9 @@
       "sentiment": "NEUTRAL"
     },
     {
-      "title": "Natural Gas Price Forecast: Warm December Weather Tests the Bulls - FXEmpire",
-      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOZm1FV3k3Q19MXzl6V1JJTjV0dGt3SXd5RzBkVWN2c19mdEoyQTZwNXlHbVJUNWVJcFdvOE5lYTlWb1dGTVpnRXBDUU93WmppOXVQWlRUWDdfcmlPb0V0Tzl2SzlPS2FaRGdhZkdaVks3cGdwR2FCSm9iM0tLN3dnSUJEY3Bhd2dsUXpUNFRTNnBlTzlHVTFYV3F5R3RxSW4zbExGYTJXU2dQR25wTEh0d0pCT016Zw?oc=5",
-      "date": "Thu, 26 Nov 2026 14:27:29 GMT",
-      "sentiment": "BEARISH"
-    },
-    {
-      "title": "India's state-owned natural gas company seeks investment partner for data center project - Data Center Dynamics",
-      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQR0lNcGFPVnk3eGg2NlVVLVpJNEpPSUZMWTRxUktSVVZNTi1DbnJyMDRoWTRjM2FzTkhhZ294cWZqT2V3Z2ItQ0FzSVdiX05fak8wb1FiQmU2SWw0Sm8yNE5TY3U1NFkwc2k2NnVPRVZzMklZaGs4b0VFb3I3cnVpVGJ6WXRfRVBzV1A1Mld5V1FEbHdUMmp4WnEyaTFHQzNpRjRyY3R6ZnFxWjFqdzE1dVNQYVRONURNblVGSk1jWlBneVhrVFI4TUxaNA?oc=5",
-      "date": "Thu, 26 Nov 2026 12:49:05 GMT",
-      "sentiment": "NEUTRAL"
-    },
-    {
-      "title": "Natural Gas Expansion Could Reshape Fertilizer Prices and Farm Costs - AgroLatam",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxONUVxOWNpVXlKdkVHQ1hsUU03QS1ZX2FpTUtySjJYYVh4MTZySTlPXzJjRXkxZ01hak1IOExiX3Jpb2xPc0JtOUhjaFktTmFRcFA0TEFzM3BmNnBtQTVfaTZSMzlmSFVlTl8yWWl3aGo2eDllYXQyQkN4MGZ0c2EzaWFBb081bW9IaEE0S3k2MjRuUWo1eHVoLWpFRFhsa21ySWxSYU43WQ?oc=5",
-      "date": "Thu, 26 Nov 2026 15:35:11 GMT",
+      "title": "Over 200,000 plug-in carbon monoxide, natural gas detectors recalled - WKRC",
+      "link": "https://news.google.com/rss/articles/CBMimgJBVV95cUxNUUtjVHVQSEhGcXJjNEZOREZNdG5PMXpMQkhOZGl4SHFyc3pvRG1pTTg0aFl2RzA3WDFfZkVvTTZBZGE1V09XWk9hMHJxUTlYS1dmSE8ta25HTFE3UjFZQXBaV3hiOElFMzU2cGVLRGhhaHlTQkNwLS1Wa0VxZG56eVJpRk9sSUJWT19KVk1XcldUR0h5S1dZejVNTW4zWFBNZk9XaFNXSm1wQkpaZTM2cmt3ZDR5WFo1NlZ2MnlMYWNjNHMzdlBHLWVFZXUwUXh4VDJkcHllckVPSENGSWMycDVoWkVuMlhQckFEeHFrVFpSckphSTQ0SlZ3T3FGQkZpMXBXMVlhSUJ6aGRkUXZCZy1LZWl0QUI3eVE?oc=5",
+      "date": "Thu, 26 Nov 2026 22:13:07 GMT",
       "sentiment": "NEUTRAL"
     }
   ]
