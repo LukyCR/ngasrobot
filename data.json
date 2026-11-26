@@ -1,11 +1,11 @@
 {
-  "updated_at": "26.11.2026 18:36 SEČ",
+  "updated_at": "26.11.2026 19:13 SEČ",
   "symbol": "NG=F (Henry Hub Futures)",
   "price": 3.68,
   "change_pct": 12.57,
   "signal": "LONG",
   "action_cz": "OTEVŘÍT LONG (KOUPIT)",
-  "score": 53,
+  "score": 44,
   "plan": {
     "entry": 3.68,
     "sl": 3.631,
@@ -29,30 +29,52 @@
     "s1": 3.196,
     "s2": 3.123
   },
+  "weather": {
+    "natgasweather_title": "Aktuální RSS nebylo dostupné – sleduj mapy NOAA níže.",
+    "natgasweather_summary": "",
+    "natgasweather_link": "https://natgasweather.com/",
+    "natgasweather_date": "",
+    "bias": "NEUTRAL",
+    "score_impact": 0,
+    "noaa_6_10_img": "https://www.cpc.ncep.noaa.gov/products/predictions/610day/610temp.new.gif",
+    "noaa_8_14_img": "https://www.cpc.ncep.noaa.gov/products/predictions/814day/814temp.new.gif"
+  },
+  "eia": {
+    "available": true,
+    "report_date": "November 20, 2026",
+    "total_bcf": 3858,
+    "weekly_change_text": "-24 Bcf (čerpání)",
+    "weekly_change_bcf": -24,
+    "vs_5y_text": "+80 Bcf nad 5Y průměrem (Přebytek)",
+    "vs_ly_text": "-79 Bcf oproti loňsku",
+    "bias": "BEARISH",
+    "score_impact": -8,
+    "summary": "Zásoby k November 20, 2026: 3858 Bcf | Týdenní změna: -24 Bcf (čerpání) | +80 Bcf nad 5Y průměrem (Přebytek)."
+  },
   "reasons": [
     {
       "type": "bull",
-      "text": "Denní trend (D1) je býčí: cena (3.680) se drží nad D1 EMA50 (3.098)."
+      "text": "Denní trend (D1) je býčí: cena (3.680) je nad D1 EMA50 (3.098)."
     },
     {
       "type": "bull",
-      "text": "Silná intradenní struktura H1: cena > EMA20 (3.666) > EMA50 (3.636)."
+      "text": "Býčí intradenní struktura H1: cena > EMA20 (3.666) > EMA50 (3.636)."
     },
     {
       "type": "bull",
-      "text": "Cena je nad dlouhodobým H1 průměrem EMA200 (3.454)."
+      "text": "Cena se drží nad H1 EMA200 (3.454)."
     },
     {
       "type": "bull",
-      "text": "RSI (14) na H1 je 55.4 – zdravé býčí momentum s prostorem pro růst."
+      "text": "RSI (14) na H1 je 55.4 – zdravé nákupní momentum."
     },
     {
       "type": "neutral",
-      "text": "MACD na H1 nedává jednoznačné zrychlení trendu."
+      "text": "MACD na H1 nedává jasné zrychlení."
     },
     {
       "type": "bear",
-      "text": "Fundamentální/zpravodajský sentiment je mírně medvědí (-12 b.)."
+      "text": "Zásoby EIA: +80 Bcf nad 5Y průměrem (Přebytek) (-8 b.)."
     }
   ],
   "warnings": [],
@@ -94,15 +116,15 @@
       "sentiment": "NEUTRAL"
     },
     {
-      "title": "Mild Thanksgiving Outlook Carves Up Northeast Natural Gas Cash Premiums - Natural Gas Intelligence",
-      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPU1VKU0JmaGhBWmo0eHYwZHM2ODhFOFNzcjdmSllsckEydFluclRramJCREIyRHcxNkZEYzdpTXlTQnFMcUd2RG5rcW56U3VNdlFTVzdXbk5FUzd0U0RXd2JxVHFqZkdUVFRESGhnaG9sOElWdzJZUXFjZFhlMkFSOVhxSFdnR0hRVmRFbWc3UzdhRkNfd0NNMU90UF9GNVlpdlMteURLTVE?oc=5",
-      "date": "Wed, 25 Nov 2026 22:16:00 GMT",
-      "sentiment": "BEARISH"
-    },
-    {
       "title": "European Natural Gas Prices Mixed as Middle East Tensions Renew Supply Concerns - Yahoo Finance UK",
       "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPYmh1dzJqeEVBTmp0bHV0eV9nYkd2eVlkWnUxWm9kZ1diQldFMFFGZUVmQVQyVS1tbmlTdG1zTGxURjNvWmh4RlV2TG1tdVNJalpLQkxScW5BUEc2R3pXLWVHRFdOVmxxd1Q3Q2RDNFlXcl93T2xxX2N6VkJ5RnREQ3NLOERxZVVSZEE?oc=5",
       "date": "Thu, 26 Nov 2026 14:11:53 GMT",
+      "sentiment": "NEUTRAL"
+    },
+    {
+      "title": "Can Rising LNG Exports Unlock Appalachian Natural Gas Growth? - Zacks Investment Research",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQbEQxMVltX08wSzhQYmVqaHdCU3BjZWZLVndPdW9QaktNTnMwVHRMRmVOcU1nSVdTNWh2bm1rSFBSYzFMbmNUNGdIZGtFdnNXYjMtZTdYaElRYm0yVm1vTDV0WFQ1MkdGY3FtNExXdGFHdUU5MnB5b241WWR5VndWeTZYSUIzSjlGVDNQb0pEejBMdHBYYW9CQXNEZElIZU56cnBB?oc=5",
+      "date": "Thu, 26 Nov 2026 17:11:13 GMT",
       "sentiment": "NEUTRAL"
     }
   ]
