@@ -1,0 +1,109 @@
+{
+  "updated_at": "26.11.2026 18:36 SEČ",
+  "symbol": "NG=F (Henry Hub Futures)",
+  "price": 3.68,
+  "change_pct": 12.57,
+  "signal": "LONG",
+  "action_cz": "OTEVŘÍT LONG (KOUPIT)",
+  "score": 53,
+  "plan": {
+    "entry": 3.68,
+    "sl": 3.631,
+    "tp1": 3.746,
+    "tp2": 3.795,
+    "rrr": 1.33,
+    "note": "Hledej vstup poblíž aktuální ceny nebo při retestu EMA20 (3.666)."
+  },
+  "indicators": {
+    "ema20": 3.666,
+    "ema50": 3.636,
+    "ema200": 3.454,
+    "rsi": 55.4,
+    "macd": 0.0111,
+    "atr": 0.033
+  },
+  "levels": {
+    "r2": 3.473,
+    "r1": 3.371,
+    "pivot": 3.298,
+    "s1": 3.196,
+    "s2": 3.123
+  },
+  "reasons": [
+    {
+      "type": "bull",
+      "text": "Denní trend (D1) je býčí: cena (3.680) se drží nad D1 EMA50 (3.098)."
+    },
+    {
+      "type": "bull",
+      "text": "Silná intradenní struktura H1: cena > EMA20 (3.666) > EMA50 (3.636)."
+    },
+    {
+      "type": "bull",
+      "text": "Cena je nad dlouhodobým H1 průměrem EMA200 (3.454)."
+    },
+    {
+      "type": "bull",
+      "text": "RSI (14) na H1 je 55.4 – zdravé býčí momentum s prostorem pro růst."
+    },
+    {
+      "type": "neutral",
+      "text": "MACD na H1 nedává jednoznačné zrychlení trendu."
+    },
+    {
+      "type": "bear",
+      "text": "Fundamentální/zpravodajský sentiment je mírně medvědí (-12 b.)."
+    }
+  ],
+  "warnings": [],
+  "news": [
+    {
+      "title": "Barchart- Is Natural Gas Inexpensive? - Barchart.com",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPZUxWS1ZWUFpERFlSSXlGRHJjRXR5Y1ZOUmJWT3BVbTdRYUZxdWpYRlFNTW92U2dMRWlfYTUxZk9FT1ZVME1aQk44UGN5OTVzWndBc1ZxUlNFcGNySUM2em05ZVloakFvUlJXOUljc0xWeHFMYnd5NEs4N2ItOEN0UXpTbkNTUQ?oc=5",
+      "date": "Thu, 26 Nov 2026 15:00:02 GMT",
+      "sentiment": "NEUTRAL"
+    },
+    {
+      "title": "US Natural Gas Futures Remain Volatile as Mild Weather Offsets Record LNG Export Demand - ChemAnalyst",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPUFdzUWROOVNaTlFYZFdkTlRFZndORXA3RFVoTkhIWTFpN0hjT01nQV93ODFxRHlYN3dsdzFXYy04b3dlRFlIY0R0cGk2dzRGdTd6TGZmRDlnazc3Z01lTEU0N1dvWHdVMjI2UnRmbjFpMjRfb0VSeTVqSUpCVnBVLU5oNHZ5SWJZUUM5ZWlUZW1NQnpXTlNrcG9icVdBVEx0LVZXVlp0bW9SYnpfaXNRRktMTQ?oc=5",
+      "date": "Thu, 26 Nov 2026 12:17:04 GMT",
+      "sentiment": "BEARISH"
+    },
+    {
+      "title": "The Download: Better bionic hands and AI’s natural-gas boom - MIT Technology Review",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQWXB4SldrakZfQ3FITmZzVTdVNFRtZWZzVGZ5bV9IMkxFZFlfdlF4OUdFU3BsLTVCWmx6cHpCR2dkV1NPVGExbWRGaF85TVd6aExxOVVMLVkzOEVsaHlOa0QzN0dVSzYwR2pwdEo0XzRaekRlY1RyQXZ5d3UyMG1CTEpjSmhqNFJTYlh2eHNTYmdvX3BOVVEtWEFqUVVlU3Z0ZDRhajN6MFTSAa4BQVVfeXFMUHlBOXJIQUVIQ1o3SlVrOWNfc0tyOURLWFlWeHJoc3p0TWZHeFFRV0F1MzE3YUlZV1p6djBHc1QxTi12S25wYVgwLVFJQUxnUThUTmgxellIZk1ETWVGOTgyMU43WXVsRjhNdkI4S3hiRVlpcHFsbDVBd0dNQlpFeVVqNDJFY0Z2clRDTEtMMkFsMUNiLUdWYnl4UG1WRWZkenA5SjA2Z2NibUxoMkln?oc=5",
+      "date": "Thu, 26 Nov 2026 13:10:00 GMT",
+      "sentiment": "NEUTRAL"
+    },
+    {
+      "title": "Natural Gas Price Forecast: Warm December Weather Tests the Bulls - FXEmpire",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOZm1FV3k3Q19MXzl6V1JJTjV0dGt3SXd5RzBkVWN2c19mdEoyQTZwNXlHbVJUNWVJcFdvOE5lYTlWb1dGTVpnRXBDUU93WmppOXVQWlRUWDdfcmlPb0V0Tzl2SzlPS2FaRGdhZkdaVks3cGdwR2FCSm9iM0tLN3dnSUJEY3Bhd2dsUXpUNFRTNnBlTzlHVTFYV3F5R3RxSW4zbExGYTJXU2dQR25wTEh0d0pCT016Zw?oc=5",
+      "date": "Thu, 26 Nov 2026 14:27:29 GMT",
+      "sentiment": "BEARISH"
+    },
+    {
+      "title": "Bridging the Grid: Solar, Storage, and Natural Gas Solutions - Mexico Business News",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQejNnUlBRS3M0Z2lENVRTNWktaGxrLUF4akI3bHhRU01sVEFGUHhlQWwxQnZGN09wdEpMMFJjbDRlY3M5aDdtdXNUdmxUckcwWGFYNWtlZjNKbGlsVEFPSFI1WEV4SlRkczljSVBpY3RReTZfd0txOGlBQjE3NG1FMDVSUGpxWjJDMDF0QXlNZDBNQ2p2WjFTZQ?oc=5",
+      "date": "Thu, 26 Nov 2026 17:04:07 GMT",
+      "sentiment": "NEUTRAL"
+    },
+    {
+      "title": "Natural Gas Expansion Could Reshape Fertilizer Prices and Farm Costs - AgroLatam",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxONUVxOWNpVXlKdkVHQ1hsUU03QS1ZX2FpTUtySjJYYVh4MTZySTlPXzJjRXkxZ01hak1IOExiX3Jpb2xPc0JtOUhjaFktTmFRcFA0TEFzM3BmNnBtQTVfaTZSMzlmSFVlTl8yWWl3aGo2eDllYXQyQkN4MGZ0c2EzaWFBb081bW9IaEE0S3k2MjRuUWo1eHVoLWpFRFhsa21ySWxSYU43WQ?oc=5",
+      "date": "Thu, 26 Nov 2026 15:35:11 GMT",
+      "sentiment": "NEUTRAL"
+    },
+    {
+      "title": "Mild Thanksgiving Outlook Carves Up Northeast Natural Gas Cash Premiums - Natural Gas Intelligence",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPU1VKU0JmaGhBWmo0eHYwZHM2ODhFOFNzcjdmSllsckEydFluclRramJCREIyRHcxNkZEYzdpTXlTQnFMcUd2RG5rcW56U3VNdlFTVzdXbk5FUzd0U0RXd2JxVHFqZkdUVFRESGhnaG9sOElWdzJZUXFjZFhlMkFSOVhxSFdnR0hRVmRFbWc3UzdhRkNfd0NNMU90UF9GNVlpdlMteURLTVE?oc=5",
+      "date": "Wed, 25 Nov 2026 22:16:00 GMT",
+      "sentiment": "BEARISH"
+    },
+    {
+      "title": "European Natural Gas Prices Mixed as Middle East Tensions Renew Supply Concerns - Yahoo Finance UK",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPYmh1dzJqeEVBTmp0bHV0eV9nYkd2eVlkWnUxWm9kZ1diQldFMFFGZUVmQVQyVS1tbmlTdG1zTGxURjNvWmh4RlV2TG1tdVNJalpLQkxScW5BUEc2R3pXLWVHRFdOVmxxd1Q3Q2RDNFlXcl93T2xxX2N6VkJ5RnREQ3NLOERxZVVSZEE?oc=5",
+      "date": "Thu, 26 Nov 2026 14:11:53 GMT",
+      "sentiment": "NEUTRAL"
+    }
+  ]
+}
