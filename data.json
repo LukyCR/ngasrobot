@@ -1,11 +1,11 @@
 {
-  "updated_at": "26.11.2026 23:43 SEČ",
+  "updated_at": "27.11.2026 00:44 SEČ",
   "symbol": "NG=F (Henry Hub Futures)",
   "price": 3.68,
   "change_pct": 12.57,
   "signal": "LONG",
   "action_cz": "OTEVŘÍT LONG (KOUPIT)",
-  "score": 47,
+  "score": 50,
   "plan": {
     "entry": 3.68,
     "sl": 3.631,
@@ -98,15 +98,21 @@
       "sentiment": "NEUTRAL"
     },
     {
-      "title": "US Natural Gas Futures Remain Volatile as Mild Weather Offsets Record LNG Export Demand - ChemAnalyst",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPUFdzUWROOVNaTlFYZFdkTlRFZndORXA3RFVoTkhIWTFpN0hjT01nQV93ODFxRHlYN3dsdzFXYy04b3dlRFlIY0R0cGk2dzRGdTd6TGZmRDlnazc3Z01lTEU0N1dvWHdVMjI2UnRmbjFpMjRfb0VSeTVqSUpCVnBVLU5oNHZ5SWJZUUM5ZWlUZW1NQnpXTlNrcG9icVdBVEx0LVZXVlp0bW9SYnpfaXNRRktMTQ?oc=5",
-      "date": "Thu, 26 Nov 2026 12:17:04 GMT",
-      "sentiment": "BEARISH"
+      "title": "Over 200,000 plug-in carbon monoxide, natural gas detectors recalled - WKRC",
+      "link": "https://news.google.com/rss/articles/CBMimgJBVV95cUxNUUtjVHVQSEhGcXJjNEZOREZNdG5PMXpMQkhOZGl4SHFyc3pvRG1pTTg0aFl2RzA3WDFfZkVvTTZBZGE1V09XWk9hMHJxUTlYS1dmSE8ta25HTFE3UjFZQXBaV3hiOElFMzU2cGVLRGhhaHlTQkNwLS1Wa0VxZG56eVJpRk9sSUJWT19KVk1XcldUR0h5S1dZejVNTW4zWFBNZk9XaFNXSm1wQkpaZTM2cmt3ZDR5WFo1NlZ2MnlMYWNjNHMzdlBHLWVFZXUwUXh4VDJkcHllckVPSENGSWMycDVoWkVuMlhQckFEeHFrVFpSckphSTQ0SlZ3T3FGQkZpMXBXMVlhSUJ6aGRkUXZCZy1LZWl0QUI3eVE?oc=5",
+      "date": "Thu, 26 Nov 2026 22:14:50 GMT",
+      "sentiment": "NEUTRAL"
     },
     {
-      "title": "More than 200,000 plug-in carbon monoxide and natural gas detectors recalled - rocketcitynow.com",
-      "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOakpwdmdOWnpkaG14cUJZMXZDcnVzY0tMVDRhY2cyREVwaFJidm9wZG1KVUtQUENMQUsxV1pobFlSRXVYSVZZTTU2V2hxWWxWdWQ2dWVablVuZ1l0ak1Ya0o1d01tR3hjR2dHb05PMDVyVk9ZQzJXRExVUGdheEludDV0NmJWWXh5QXFfbVRPS1pFX3lhNzVmVzdJUGdwcWgwcC1ZY1FQRmxoS1NRejJCbU0xaGlwYmN1UHJmd2hLWGJJZDF1MHgwbzZTazE0dkpBeC1SVTZTVlBGNkhKWElycXVPOUc4ejFXelEydGpCYXF5bVloS2pVOHhWNU45azNWSEE?oc=5",
-      "date": "Thu, 26 Nov 2026 21:47:00 GMT",
+      "title": "Australian Parliament passes government plan to reserve 20% of LNG for domestic market - Reuters",
+      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOdDhMYThjNnMyOVpseWdXOW5xMmdHczk5dWRzdkYzVnM0eUJ2cGZMZEdBTGdpeHJUN3lfRHRNM1R2dk5YUkhHQUI0cDdMMEh4Mk9pTmNzMVpaLXBoTFF5b3JVNUVIZlZ4V2xYTkE3dTl6MWtnX2FPNlZRUTk0Z0NKc29TSDJoN1R5VUtXNURZcG9zdlJFd0IzN01HbzBkeHJMLWFGalNBb2JjcUN4Nk13emZ6X0VyYm1SVVJ6ejMtNDhhZXRjUmc?oc=5",
+      "date": "Thu, 26 Nov 2026 23:11:30 GMT",
+      "sentiment": "NEUTRAL"
+    },
+    {
+      "title": "Can Rising LNG Exports Unlock Appalachian Natural Gas Growth? - Zacks Investment Research",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQbEQxMVltX08wSzhQYmVqaHdCU3BjZWZLVndPdW9QaktNTnMwVHRMRmVOcU1nSVdTNWh2bm1rSFBSYzFMbmNUNGdIZGtFdnNXYjMtZTdYaElRYm0yVm1vTDV0WFQ1MkdGY3FtNExXdGFHdUU5MnB5b241WWR5VndWeTZYSUIzSjlGVDNQb0pEejBMdHBYYW9CQXNEZElIZU56cnBB?oc=5",
+      "date": "Thu, 26 Nov 2026 17:11:13 GMT",
       "sentiment": "NEUTRAL"
     },
     {
@@ -116,15 +122,9 @@
       "sentiment": "NEUTRAL"
     },
     {
-      "title": "Can Rising LNG Exports Unlock Appalachian Natural Gas Growth? - Yahoo Finance",
-      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNc2NLV19GeDZGWHkxRGpKWGlJbzljZm02MUo3SEpZYTFhb203c1lDQ0IwOC1zeHA2aklHbExRb0R4ZlN6cFpSTGR3YkdGZ3pYT2hqZWlOdG1mdVBwRlJYbWtqdkw5X1hWUTFhVHNMdG9lUzRraWxWNk40aGFHRW53STRud2J4LUdLMy1aZzV2SVBfcF9seEJyazJ3?oc=5",
-      "date": "Thu, 26 Nov 2026 17:01:00 GMT",
-      "sentiment": "NEUTRAL"
-    },
-    {
-      "title": "Over 200,000 plug-in carbon monoxide, natural gas detectors recalled - WKRC",
-      "link": "https://news.google.com/rss/articles/CBMimgJBVV95cUxNUUtjVHVQSEhGcXJjNEZOREZNdG5PMXpMQkhOZGl4SHFyc3pvRG1pTTg0aFl2RzA3WDFfZkVvTTZBZGE1V09XWk9hMHJxUTlYS1dmSE8ta25HTFE3UjFZQXBaV3hiOElFMzU2cGVLRGhhaHlTQkNwLS1Wa0VxZG56eVJpRk9sSUJWT19KVk1XcldUR0h5S1dZejVNTW4zWFBNZk9XaFNXSm1wQkpaZTM2cmt3ZDR5WFo1NlZ2MnlMYWNjNHMzdlBHLWVFZXUwUXh4VDJkcHllckVPSENGSWMycDVoWkVuMlhQckFEeHFrVFpSckphSTQ0SlZ3T3FGQkZpMXBXMVlhSUJ6aGRkUXZCZy1LZWl0QUI3eVE?oc=5",
-      "date": "Thu, 26 Nov 2026 22:13:07 GMT",
+      "title": "More than 200,000 plug-in carbon monoxide and natural gas detectors recalled - rocketcitynow.com",
+      "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOakpwdmdOWnpkaG14cUJZMXZDcnVzY0tMVDRhY2cyREVwaFJidm9wZG1KVUtQUENMQUsxV1pobFlSRXVYSVZZTTU2V2hxWWxWdWQ2dWVablVuZ1l0ak1Ya0o1d01tR3hjR2dHb05PMDVyVk9ZQzJXRExVUGdheEludDV0NmJWWXh5QXFfbVRPS1pFX3lhNzVmVzdJUGdwcWgwcC1ZY1FQRmxoS1NRejJCbU0xaGlwYmN1UHJmd2hLWGJJZDF1MHgwbzZTazE0dkpBeC1SVTZTVlBGNkhKWElycXVPOUc4ejFXelEydGpCYXF5bVloS2pVOHhWNU45azNWSEE?oc=5",
+      "date": "Thu, 26 Nov 2026 21:47:00 GMT",
       "sentiment": "NEUTRAL"
     }
   ]
