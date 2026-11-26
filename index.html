@@ -13,12 +13,12 @@
     <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 border-b border-slate-800 pb-4">
       <div>
         <h1 class="text-2xl font-bold tracking-tight text-white">NGAS USA – Analytický Robot</h1>
-        <p class="text-sm text-slate-400">Automatická technická a sentimentová analýza Henry Hub (NG=F) pro XTB</p>
+        <p class="text-sm text-slate-400">Technika (NG=F), počasí (NOAA / NatGasWeather) a zásoby (EIA) pro XTB</p>
       </div>
       <div class="text-right">
         <div id="updated-at" class="text-xs text-slate-400">Načítám data...</div>
         <button onclick="loadData()" class="mt-1 text-xs bg-slate-800 hover:bg-slate-700 px-3 py-1 rounded text-sky-400">
-          Obnovit stránku
+          Obnovit data
         </button>
       </div>
     </div>
@@ -54,11 +54,10 @@
             <span id="change-pct" class="text-sm font-semibold">--</span>
           </div>
         </div>
-        <!-- XTB Offset kalkulačka -->
         <div class="mt-4 pt-4 border-t border-slate-800">
-          <label class="text-xs text-slate-400 block mb-1">Přepočet na tvoji cenu v XTB (volitelné):</label>
+          <label class="text-xs text-slate-400 block mb-1">Přepočet na tvoji cenu v XTB (s tečkou):</label>
           <div class="flex gap-2">
-            <input id="xtb-price" type="number" step="0.001" placeholder="např. 3.680"
+            <input id="xtb-price" type="number" step="0.001" placeholder="např. 3.600"
               class="w-full bg-slate-950 border border-slate-700 rounded px-2 py-1 text-sm text-white" />
             <button onclick="applyXtbOffset()" class="bg-sky-600 hover:bg-sky-500 px-3 py-1 rounded text-xs font-semibold">
               Přepočítat
@@ -110,6 +109,76 @@
       </div>
     </div>
 
+    <!-- NOVÁ SEKCE: POČASÍ & ZÁSOBY EIA -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+
+      <!-- Zásoby EIA & Vrtné soupravy -->
+      <div class="rounded-xl p-5 border border-slate-800 bg-slate-900 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-3">
+            <h2 class="text-base font-semibold text-white">Zásoby USA (EIA Storage Report)</h2>
+            <span id="eia-badge" class="px-2 py-0.5 rounded text-xs bg-slate-800 text-slate-400">Neutrální</span>
+          </div>
+          <div class="grid grid-cols-2 gap-3 text-sm mb-3">
+            <div class="bg-slate-950 p-3 rounded-lg border border-slate-800">
+              <div class="text-xs text-slate-400">Celkem v zásobnících</div>
+              <div id="eia-total" class="text-lg font-bold text-white">--</div>
+            </div>
+            <div class="bg-slate-950 p-3 rounded-lg border border-slate-800">
+              <div class="text-xs text-slate-400">Týdenní změna</div>
+              <div id="eia-change" class="text-lg font-bold text-sky-400">--</div>
+            </div>
+            <div class="bg-slate-950 p-3 rounded-lg border border-slate-800">
+              <div class="text-xs text-slate-400">Oproti 5Y průměru</div>
+              <div id="eia-5y" class="text-sm font-semibold text-slate-200 mt-1">--</div>
+            </div>
+            <div class="bg-slate-950 p-3 rounded-lg border border-slate-800">
+              <div class="text-xs text-slate-400">Oproti loňsku</div>
+              <div id="eia-ly" class="text-sm font-semibold text-slate-200 mt-1">--</div>
+            </div>
+          </div>
+          <div id="eia-date" class="text-xs text-slate-400 mb-3"></div>
+        </div>
+        <div class="flex flex-wrap gap-2 pt-3 border-t border-slate-800 text-xs">
+          <a href="https://ir.eia.gov/ngs/ngs.html" target="_blank" class="bg-slate-800 hover:bg-slate-700 px-3 py-1.5 rounded text-sky-400">EIA Zásoby (detail) ↗</a>
+          <a href="https://www.eia.gov/naturalgas/weekly/" target="_blank" class="bg-slate-800 hover:bg-slate-700 px-3 py-1.5 rounded text-sky-400">EIA Weekly Update ↗</a>
+          <a href="https://ycharts.com/indicators/us_gas_rotary_rigs" target="_blank" class="bg-slate-800 hover:bg-slate-700 px-3 py-1.5 rounded text-sky-400">YCharts Rigs ↗</a>
+        </div>
+      </div>
+
+      <!-- Počasí: NatGasWeather + NOAA CPC mapy -->
+      <div class="rounded-xl p-5 border border-slate-800 bg-slate-900 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-2">
+            <h2 class="text-base font-semibold text-white">Počasí USA (NOAA CPC & NatGasWeather)</h2>
+            <span id="weather-badge" class="px-2 py-0.5 rounded text-xs bg-slate-800 text-slate-400">Neutrální</span>
+          </div>
+          <a id="ngw-link" href="https://natgasweather.com/" target="_blank" class="text-sm font-semibold text-sky-400 hover:underline block">
+            Načítám NatGasWeather...
+          </a>
+          <p id="ngw-summary" class="text-xs text-slate-300 mt-1 mb-3"></p>
+
+          <!-- Živé NOAA mapy -->
+          <div class="grid grid-cols-2 gap-3">
+            <a href="https://www.cpc.ncep.noaa.gov/products/predictions/610day/" target="_blank" class="block bg-slate-950 rounded-lg p-1.5 border border-slate-800 hover:border-sky-500 transition">
+              <div class="text-[11px] text-slate-400 text-center mb-1">NOAA 6–10 dní (modrá = chladno)</div>
+              <img id="noaa-6-10" src="https://www.cpc.ncep.noaa.gov/products/predictions/610day/610temp.new.gif" alt="NOAA 6-10 Day" class="w-full rounded" />
+            </a>
+            <a href="https://www.cpc.ncep.noaa.gov/products/predictions/814day/" target="_blank" class="block bg-slate-950 rounded-lg p-1.5 border border-slate-800 hover:border-sky-500 transition">
+              <div class="text-[11px] text-slate-400 text-center mb-1">NOAA 8–14 dní (červená = teplo)</div>
+              <img id="noaa-8-14" src="https://www.cpc.ncep.noaa.gov/products/predictions/814day/814temp.new.gif" alt="NOAA 8-14 Day" class="w-full rounded" />
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-2 pt-3 mt-3 border-t border-slate-800 text-xs">
+          <a href="https://natgasweather.com/" target="_blank" class="bg-slate-800 hover:bg-slate-700 px-3 py-1.5 rounded text-sky-400">NatGasWeather ↗</a>
+          <a href="https://www.cpc.ncep.noaa.gov/" target="_blank" class="bg-slate-800 hover:bg-slate-700 px-3 py-1.5 rounded text-sky-400">NOAA CPC ↗</a>
+          <a href="https://www.celsiusenergy.net/" target="_blank" class="bg-slate-800 hover:bg-slate-700 px-3 py-1.5 rounded text-sky-400">Celsius Energy ↗</a>
+        </div>
+      </div>
+
+    </div>
+
     <!-- PROČ otevřít / neotevírat pozici -->
     <div class="rounded-xl p-5 border border-slate-800 bg-slate-900">
       <h2 class="text-base font-semibold text-white mb-3">Proč robot doporučuje tento krok</h2>
@@ -118,10 +187,10 @@
 
     <!-- Živý TradingView graf -->
     <div class="rounded-xl overflow-hidden border border-slate-800 bg-slate-900">
-      <div class="p-3 border-b border-slate-800 text-sm font-semibold text-white">Živý graf NATURALGAS (TradingView)</div>
+      <div class="p-3 border-b border-slate-800 text-sm font-semibold text-white">Živý graf US Natural Gas (TradingView)</div>
       <div class="h-[460px]">
         <iframe
-          src="https://s.tradingview.com/widgetembed/?symbol=CAPITALCOM%3ANATURALGAS&interval=30&theme=dark&style=1&locale=cs&toolbarbg=0f172a&studies=EMA@tv-basicstudies%1FRSI@tv-basicstudies"
+          src="https://s.tradingview.com/widgetembed/?symbol=CAPITALCOM%3ANATURALGAS&interval=15&theme=dark&style=1&locale=cs&toolbarbg=0f172a&studies=EMA@tv-basicstudies%1FRSI@tv-basicstudies"
           class="w-full h-full border-0">
         </iframe>
       </div>
@@ -134,7 +203,7 @@
     </div>
 
     <p class="text-xs text-slate-500 text-center pb-4">
-      Upozornění: Tento nástroj slouží výhradně k technické a informační analýze, nikoliv jako investiční poradenství. Obchodování CFD na zemní plyn je vysoce rizikové.
+      Upozornění: Nástroj slouží výhradně k informační a technické analýze, nikoliv jako investiční poradenství.
     </p>
   </div>
 
@@ -143,6 +212,20 @@
 
     function fmt(val, offset = 0) {
       return (val + offset).toFixed(3);
+    }
+
+    function setBadge(elId, bias) {
+      const el = document.getElementById(elId);
+      if (bias === "BULLISH") {
+        el.textContent = "Býčí";
+        el.className = "px-2 py-0.5 rounded text-xs bg-emerald-900/60 text-emerald-300";
+      } else if (bias === "BEARISH") {
+        el.textContent = "Medvědí";
+        el.className = "px-2 py-0.5 rounded text-xs bg-rose-900/60 text-rose-300";
+      } else {
+        el.textContent = "Neutrální";
+        el.className = "px-2 py-0.5 rounded text-xs bg-slate-800 text-slate-400";
+      }
     }
 
     function render(offset = 0) {
@@ -196,6 +279,25 @@
       document.getElementById("ind-rsi").textContent = d.indicators.rsi;
       document.getElementById("ind-atr").textContent = d.indicators.atr.toFixed(3);
 
+      // EIA Zásoby
+      if (d.eia) {
+        document.getElementById("eia-total").textContent = d.eia.total_bcf ? d.eia.total_bcf + " Bcf" : "N/A";
+        document.getElementById("eia-change").textContent = d.eia.weekly_change_text || "N/A";
+        document.getElementById("eia-5y").textContent = d.eia.vs_5y_text || "N/A";
+        document.getElementById("eia-ly").textContent = d.eia.vs_ly_text || "N/A";
+        document.getElementById("eia-date").textContent = "Data k pátku: " + (d.eia.report_date || "Nezjištěno");
+        setBadge("eia-badge", d.eia.bias);
+      }
+
+      // Počasí
+      if (d.weather) {
+        const ngwLink = document.getElementById("ngw-link");
+        ngwLink.textContent = d.weather.natgasweather_title;
+        ngwLink.href = d.weather.natgasweather_link;
+        document.getElementById("ngw-summary").textContent = d.weather.natgasweather_summary;
+        setBadge("weather-badge", d.weather.bias);
+      }
+
       // Varování
       const wBox = document.getElementById("warnings-box");
       if (d.warnings && d.warnings.length > 0) {
@@ -239,7 +341,7 @@
         rawData = await res.json();
         render(0);
       } catch (e) {
-        document.getElementById("signal-text").textContent = "Čekám na první běh robota (data.json)";
+        document.getElementById("signal-text").textContent = "Čekám na aktualizaci data.json";
       }
     }
 
