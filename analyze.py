@@ -1,4 +1,6 @@
+import html
 import json
+import re
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime
@@ -8,16 +10,17 @@ import pandas as pd
 import yfinance as yf
 
 TZ = ZoneInfo("Europe/Prague")
+HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
 
 BULLISH_WORDS = [
     "cold", "freeze", "arctic", "chill", "heating demand", "draw", "larger draw",
     "bullish", "surge", "rally", "jump", "soar", "lng record", "outage", "deficit",
-    "colder", "storm", "snow", "tight supply"
+    "colder", "storm", "snow", "tight supply", "strong demand", "cooler"
 ]
 BEARISH_WORDS = [
     "warm", "mild", "warmer", "bearish", "drop", "fall", "plunge", "tumble",
     "surplus", "build", "injection", "glut", "oversupply", "weak demand",
-    "record production", "shutdown", "lng outage"
+    "record production", "shutdown", "lng outage", "light demand", "comfortable"
 ]
 
 
@@ -45,6 +48,128 @@ def calc_atr(df: pd.DataFrame, period: int = 14) -> pd.Series:
     return tr.ewm(alpha=1 / period, adjust=False).mean()
 
 
+def strip_html(text: str) -> str:
+    clean = re.sub(r"<[^>]+>", " ", text or "")
+    return re.sub(r"\s+", " ", html.unescape(clean)).strip()
+
+
+def fetch_eia_storage():
+    """Stáhne poslední oficiální týdenní report zásob zemního plynu z EIA."""
+    data = {
+        "available": False,
+        "report_date": "Nezjištěno",
+        "total_bcf": None,
+        "weekly_change_text": "Nezjištěno",
+        "weekly_change_bcf": None,
+        "vs_5y_text": "Nezjištěno",
+        "vs_ly_text": "Nezjištěno",
+        "bias": "NEUTRAL",
+        "score_impact": 0,
+        "summary": "Nepodařilo se načíst automatický text EIA – zkontroluj přímý odkaz níže."
+    }
+
+    urls = ["https://ir.eia.gov/ngs/wngsr.txt", "https://ir.eia.gov/ngs/ngs.html"]
+    raw_text = ""
+    for url in urls:
+        try:
+            req = urllib.request.Request(url, headers=HEADERS)
+            with urllib.request.urlopen(req, timeout=12) as resp:
+                raw_text = strip_html(resp.read().decode("utf-8", errors="ignore"))
+            if "Working gas in storage" in raw_text:
+                break
+        except Exception:
+            continue
+
+    if not raw_text or "Working gas in storage" not in raw_text:
+        return data
+
+    m_total = re.search(r"Working gas in storage was ([\d,]+)\s*Bcf", raw_text, re.I)
+    m_date = re.search(r"as of Friday,\s*([A-Za-z]+\s+\d+,\s+\d{4})", raw_text, re.I)
+    m_chg = re.search(r"net (increase|decrease) of ([\d,]+)\s*Bcf", raw_text, re.I)
+    m_5y = re.search(r"([\d,]+)\s*Bcf (above|below) the five-year average", raw_text, re.I)
+    m_ly = re.search(r"([\d,]+)\s*Bcf (higher|less|more|lower|above|below) than last year", raw_text, re.I)
+
+    if m_total:
+        data["available"] = True
+        data["total_bcf"] = int(m_total.group(1).replace(",", ""))
+    if m_date:
+        data["report_date"] = m_date.group(1)
+    if m_chg:
+        direction = m_chg.group(1).lower()
+        val = int(m_chg.group(2).replace(",", ""))
+        sign = "-" if direction == "decrease" else "+"
+        cz_dir = "čerpání" if direction == "decrease" else "vtláčení"
+        data["weekly_change_bcf"] = -val if direction == "decrease" else val
+        data["weekly_change_text"] = f"{sign}{val} Bcf ({cz_dir})"
+    if m_5y:
+        val_5y = int(m_5y.group(1).replace(",", ""))
+        pos = m_5y.group(2).lower()
+        if pos == "below":
+            data["vs_5y_text"] = f"-{val_5y} Bcf pod 5Y průměrem (Deficit)"
+            data["bias"] = "BULLISH"
+            data["score_impact"] = 8
+        else:
+            data["vs_5y_text"] = f"+{val_5y} Bcf nad 5Y průměrem (Přebytek)"
+            data["bias"] = "BEARISH"
+            data["score_impact"] = -8
+    if m_ly:
+        val_ly = int(m_ly.group(1).replace(",", ""))
+        pos_ly = m_ly.group(2).lower()
+        sign_ly = "+" if pos_ly in ("higher", "more", "above") else "-"
+        data["vs_ly_text"] = f"{sign_ly}{val_ly} Bcf oproti loňsku"
+
+    data["summary"] = (
+        f"Zásoby k {data['report_date']}: {data['total_bcf']} Bcf | "
+        f"Týdenní změna: {data['weekly_change_text']} | {data['vs_5y_text']}."
+    )
+    return data
+
+
+def fetch_weather_sources():
+    """Načte nejnovější výhled z NatGasWeather RSS (GFS/ECMWF) a vyhodnotí bias."""
+    result = {
+        "natgasweather_title": "Aktuální RSS nebylo dostupné – sleduj mapy NOAA níže.",
+        "natgasweather_summary": "",
+        "natgasweather_link": "https://natgasweather.com/",
+        "natgasweather_date": "",
+        "bias": "NEUTRAL",
+        "score_impact": 0,
+        "noaa_6_10_img": "https://www.cpc.ncep.noaa.gov/products/predictions/610day/610temp.new.gif",
+        "noaa_8_14_img": "https://www.cpc.ncep.noaa.gov/products/predictions/814day/814temp.new.gif",
+    }
+
+    try:
+        req = urllib.request.Request("https://natgasweather.com/feed/", headers=HEADERS)
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            root = ET.fromstring(resp.read())
+        item = root.find("./channel/item")
+        if item is not None:
+            title = item.findtext("title", "").strip()
+            desc = strip_html(item.findtext("description", ""))[:320]
+            link = item.findtext("link", "https://natgasweather.com/")
+            pub = item.findtext("pubDate", "")
+            combined = f"{title} {desc}".lower()
+
+            b_hits = sum(1 for w in BULLISH_WORDS if w in combined)
+            s_hits = sum(1 for w in BEARISH_WORDS if w in combined)
+
+            result["natgasweather_title"] = title
+            result["natgasweather_summary"] = desc + ("..." if len(desc) >= 320 else "")
+            result["natgasweather_link"] = link
+            result["natgasweather_date"] = pub
+
+            if b_hits > s_hits:
+                result["bias"] = "BULLISH"
+                result["score_impact"] = 10
+            elif s_hits > b_hits:
+                result["bias"] = "BEARISH"
+                result["score_impact"] = -10
+    except Exception:
+        pass
+
+    return result
+
+
 def fetch_news_sentiment():
     url = (
         "https://news.google.com/rss/search?"
@@ -54,7 +179,7 @@ def fetch_news_sentiment():
     items = []
     score = 0
     try:
-        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        req = urllib.request.Request(url, headers=HEADERS)
         with urllib.request.urlopen(req, timeout=10) as resp:
             root = ET.fromstring(resp.read())
         for item in root.findall("./channel/item")[:8]:
@@ -66,23 +191,23 @@ def fetch_news_sentiment():
             s_hits = sum(1 for w in BEARISH_WORDS if w in lower)
             if b_hits > s_hits:
                 tag = "BULLISH"
-                score += 4
+                score += 3
             elif s_hits > b_hits:
                 tag = "BEARISH"
-                score -= 4
+                score -= 3
             else:
                 tag = "NEUTRAL"
             items.append({"title": title, "link": link, "date": pub, "sentiment": tag})
     except Exception as e:
         items.append({"title": f"Nepodařilo se načíst zprávy: {e}", "link": "#", "date": "", "sentiment": "NEUTRAL"})
 
-    score = max(-20, min(20, score))
+    score = max(-15, min(15, score))
     return score, items
 
 
 def get_risk_warnings(now: datetime):
     warnings = []
-    wd = now.weekday()  # 0=Po ... 6=Ne
+    wd = now.weekday()
     hr = now.hour
 
     if wd >= 5:
@@ -118,7 +243,6 @@ def run_analysis():
     df_h1["ATR"] = calc_atr(df_h1, 14)
 
     # Indikátory D1
-    df_d1["EMA20"] = df_d1["Close"].ewm(span=20, adjust=False).mean()
     df_d1["EMA50"] = df_d1["Close"].ewm(span=50, adjust=False).mean()
 
     last_h1 = df_h1.iloc[-1]
@@ -140,7 +264,7 @@ def run_analysis():
     prev_hist = float(prev_h1["MACD_HIST"])
     atr = float(last_h1["ATR"])
 
-    # Klasické denní Pivoty (S/R) z předchozího dne
+    # Denní Pivoty
     p_h, p_l, p_c = float(prev_d1["High"]), float(prev_d1["Low"]), float(prev_d1["Close"])
     pivot = (p_h + p_l + p_c) / 3
     r1 = 2 * pivot - p_l
@@ -148,75 +272,84 @@ def run_analysis():
     r2 = pivot + (p_h - p_l)
     s2 = pivot - (p_h - p_l)
 
-    # Skórovací model (-100 až +100)
     score = 0
     reasons = []
 
     # 1. Denní trend (D1)
     if price > float(last_d1["EMA50"]):
-        score += 20
-        reasons.append({"type": "bull", "text": f"Denní trend (D1) je býčí: cena ({price:.3f}) se drží nad D1 EMA50 ({float(last_d1['EMA50']):.3f})."})
+        score += 18
+        reasons.append({"type": "bull", "text": f"Denní trend (D1) je býčí: cena ({price:.3f}) je nad D1 EMA50 ({float(last_d1['EMA50']):.3f})."})
     else:
-        score -= 20
+        score -= 18
         reasons.append({"type": "bear", "text": f"Denní trend (D1) je medvědí: cena ({price:.3f}) je pod D1 EMA50 ({float(last_d1['EMA50']):.3f})."})
 
-    # 2. Intradenní struktura (H1 EMA 20/50)
+    # 2. Intradenní struktura (H1)
     if price > ema20 > ema50:
-        score += 20
-        reasons.append({"type": "bull", "text": f"Silná intradenní struktura H1: cena > EMA20 ({ema20:.3f}) > EMA50 ({ema50:.3f})."})
+        score += 18
+        reasons.append({"type": "bull", "text": f"Býčí intradenní struktura H1: cena > EMA20 ({ema20:.3f}) > EMA50 ({ema50:.3f})."})
     elif price < ema20 < ema50:
-        score -= 20
-        reasons.append({"type": "bear", "text": f"Silná medvědí struktura H1: cena < EMA20 ({ema20:.3f}) < EMA50 ({ema50:.3f})."})
+        score -= 18
+        reasons.append({"type": "bear", "text": f"Medvědí intradenní struktura H1: cena < EMA20 ({ema20:.3f}) < EMA50 ({ema50:.3f})."})
     else:
-        reasons.append({"type": "neutral", "text": "H1 klouzavé průměry EMA20/EMA50 jsou v konsolidaci (chybí jasný intradenní trend)."})
+        reasons.append({"type": "neutral", "text": "H1 klouzavé průměry EMA20/EMA50 jsou v konsolidaci."})
 
     # 3. Filtr H1 EMA200
     if price > ema200:
         score += 10
-        reasons.append({"type": "bull", "text": f"Cena je nad dlouhodobým H1 průměrem EMA200 ({ema200:.3f})."})
+        reasons.append({"type": "bull", "text": f"Cena se drží nad H1 EMA200 ({ema200:.3f})."})
     else:
         score -= 10
-        reasons.append({"type": "bear", "text": f"Cena je pod dlouhodobým H1 průměrem EMA200 ({ema200:.3f})."})
+        reasons.append({"type": "bear", "text": f"Cena je pod H1 EMA200 ({ema200:.3f})."})
 
     # 4. RSI (14)
     if 52 <= rsi <= 68:
-        score += 15
-        reasons.append({"type": "bull", "text": f"RSI (14) na H1 je {rsi:.1f} – zdravé býčí momentum s prostorem pro růst."})
+        score += 12
+        reasons.append({"type": "bull", "text": f"RSI (14) na H1 je {rsi:.1f} – zdravé nákupní momentum."})
     elif 32 <= rsi <= 48:
-        score -= 15
-        reasons.append({"type": "bear", "text": f"RSI (14) na H1 je {rsi:.1f} – převládá prodejní tlak bez extrémní přeprodanosti."})
+        score -= 12
+        reasons.append({"type": "bear", "text": f"RSI (14) na H1 je {rsi:.1f} – převládá prodejní tlak."})
     elif rsi > 72:
-        score -= 10
-        reasons.append({"type": "bear", "text": f"RSI (14) je překoupené ({rsi:.1f}) – hrozí krátkodobý pullback, nevhodné pro agresivní Long."})
+        score -= 8
+        reasons.append({"type": "bear", "text": f"RSI (14) je překoupené ({rsi:.1f}) – riziko korekce."})
     elif rsi < 28:
-        score += 10
-        reasons.append({"type": "bull", "text": f"RSI (14) je silně přeprodané ({rsi:.1f}) – roste šance na technický odraz nahoru."})
+        score += 8
+        reasons.append({"type": "bull", "text": f"RSI (14) je přeprodané ({rsi:.1f}) – šance na odraz nahoru."})
     else:
-        reasons.append({"type": "neutral", "text": f"RSI (14) na H1 je v neutrální zóně ({rsi:.1f})."})
+        reasons.append({"type": "neutral", "text": f"RSI (14) na H1 je neutrální ({rsi:.1f})."})
 
-    # 5. MACD Momentum
+    # 5. MACD
     if macd > macd_sig and macd_hist > prev_hist:
-        score += 15
-        reasons.append({"type": "bull", "text": "MACD na H1 je nad signální linií a histogram roste (zesilující nákupní momentum)."})
+        score += 12
+        reasons.append({"type": "bull", "text": "MACD na H1 roste nad signální linií (nákupní momentum)."})
     elif macd < macd_sig and macd_hist < prev_hist:
-        score -= 15
-        reasons.append({"type": "bear", "text": "MACD na H1 je pod signální linií a histogram klesá (zesilující prodejní tlak)."})
+        score -= 12
+        reasons.append({"type": "bear", "text": "MACD na H1 klesá pod signální linií (prodejní momentum)."})
     else:
-        reasons.append({"type": "neutral", "text": "MACD na H1 nedává jednoznačné zrychlení trendu."})
+        reasons.append({"type": "neutral", "text": "MACD na H1 nedává jasné zrychlení."})
 
-    # 6. Sentiment zpráv & počasí
+    # 6. Počasí (NatGasWeather)
+    weather = fetch_weather_sources()
+    score += weather["score_impact"]
+    if weather["bias"] == "BULLISH":
+        reasons.append({"type": "bull", "text": f"Počasí (NatGasWeather): chladnější/býčí signály (+{weather['score_impact']} b.)."})
+    elif weather["bias"] == "BEARISH":
+        reasons.append({"type": "bear", "text": f"Počasí (NatGasWeather): mírnější/medvědí výhled ({weather['score_impact']} b.)."})
+
+    # 7. Zásoby EIA
+    eia = fetch_eia_storage()
+    score += eia["score_impact"]
+    if eia["available"]:
+        if eia["bias"] == "BULLISH":
+            reasons.append({"type": "bull", "text": f"Zásoby EIA: {eia['vs_5y_text']} (+{eia['score_impact']} b.)."})
+        elif eia["bias"] == "BEARISH":
+            reasons.append({"type": "bear", "text": f"Zásoby EIA: {eia['vs_5y_text']} ({eia['score_impact']} b.)."})
+
+    # 8. Zprávy
     news_score, news_items = fetch_news_sentiment()
     score += news_score
-    if news_score > 0:
-        reasons.append({"type": "bull", "text": f"Fundamentální/zpravodajský sentiment je mírně býčí (+{news_score} b.)."})
-    elif news_score < 0:
-        reasons.append({"type": "bear", "text": f"Fundamentální/zpravodajský sentiment je mírně medvědí ({news_score} b.)."})
-    else:
-        reasons.append({"type": "neutral", "text": "Zprávy o počasí, EIA a LNG jsou momentálně smíšené/neutrální."})
-
     score = max(-100, min(100, score))
 
-    # Určení signálu a obchodního plánu
+    # Obchodní plán
     if score >= 30:
         signal = "LONG"
         action_cz = "OTEVŘÍT LONG (KOUPIT)"
@@ -240,7 +373,7 @@ def run_analysis():
         sl = s1
         tp1 = r1
         tp2 = r2
-        plan_note = f"Trh nemá jasnou převahu. Čekej na průraz rezistence R1 ({r1:.3f}) pro Long nebo supportu S1 ({s1:.3f}) pro Short."
+        plan_note = f"Trh nemá jasnou převahu. Čekej na průraz R1 ({r1:.3f}) pro Long nebo S1 ({s1:.3f}) pro Short."
 
     rrr = round(abs(tp1 - entry) / max(abs(entry - sl), 0.0001), 2) if signal != "NEUTRAL" else 0
 
@@ -275,6 +408,8 @@ def run_analysis():
             "s1": round(s1, 3),
             "s2": round(s2, 3),
         },
+        "weather": weather,
+        "eia": eia,
         "reasons": reasons,
         "warnings": get_risk_warnings(now),
         "news": news_items,
@@ -282,7 +417,7 @@ def run_analysis():
 
     with open("data.json", "w", encoding="utf-8") as f:
         json.dump(output, f, ensure_ascii=False, indent=2)
-    print(f"Hotovo: {signal} (skóre {score}) @ {price:.3f}")
+    print(f"Hotovo: {signal} (skóre {score}) @ {price:.3f} | EIA: {eia['available']}")
 
 
 if __name__ == "__main__":
