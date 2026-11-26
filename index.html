@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NGAS USA – Trading Robot</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen font-sans">
+  <div class="max-w-6xl mx-auto px-4 py-6 space-y-6">
+
+    <!-- Hlavička -->
+    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 border-b border-slate-800 pb-4">
+      <div>
+        <h1 class="text-2xl font-bold tracking-tight text-white">NGAS USA – Analytický Robot</h1>
+        <p class="text-sm text-slate-400">Automatická technická a sentimentová analýza Henry Hub (NG=F) pro XTB</p>
+      </div>
+      <div class="text-right">
+        <div id="updated-at" class="text-xs text-slate-400">Načítám data...</div>
+        <button onclick="loadData()" class="mt-1 text-xs bg-slate-800 hover:bg-slate-700 px-3 py-1 rounded text-sky-400">
+          Obnovit stránku
+        </button>
+      </div>
+    </div>
+
+    <!-- Riziková upozornění -->
+    <div id="warnings-box" class="hidden space-y-2"></div>
+
+    <!-- Hlavní verdikt & Cena -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div id="signal-card" class="md:col-span-2 rounded-xl p-6 border border-slate-800 bg-slate-900 flex flex-col justify-between">
+        <div>
+          <span class="text-xs uppercase tracking-wider text-slate-400">Aktuální doporučení robota</span>
+          <div id="signal-text" class="text-3xl font-extrabold mt-1">Načítám...</div>
+          <p id="plan-note" class="text-sm text-slate-300 mt-2"></p>
+        </div>
+        <div class="mt-4">
+          <div class="flex justify-between text-xs text-slate-400 mb-1">
+            <span>Medvědí (-100)</span>
+            <span id="score-label" class="font-semibold text-white">Skóre: 0</span>
+            <span>Býčí (+100)</span>
+          </div>
+          <div class="w-full h-3 bg-slate-800 rounded-full overflow-hidden">
+            <div id="score-bar" class="h-full bg-sky-500 transition-all duration-500" style="width: 50%"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rounded-xl p-6 border border-slate-800 bg-slate-900 flex flex-col justify-between">
+        <div>
+          <span class="text-xs uppercase tracking-wider text-slate-400">Henry Hub Futures (NG=F)</span>
+          <div class="flex items-baseline gap-3 mt-1">
+            <span id="price" class="text-4xl font-bold text-white">--</span>
+            <span id="change-pct" class="text-sm font-semibold">--</span>
+          </div>
+        </div>
+        <!-- XTB Offset kalkulačka -->
+        <div class="mt-4 pt-4 border-t border-slate-800">
+          <label class="text-xs text-slate-400 block mb-1">Přepočet na tvoji cenu v XTB (volitelné):</label>
+          <div class="flex gap-2">
+            <input id="xtb-price" type="number" step="0.001" placeholder="např. 3.680"
+              class="w-full bg-slate-950 border border-slate-700 rounded px-2 py-1 text-sm text-white" />
+            <button onclick="applyXtbOffset()" class="bg-sky-600 hover:bg-sky-500 px-3 py-1 rounded text-xs font-semibold">
+              Přepočítat
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Obchodní plán + Klíčové úrovně -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div class="rounded-xl p-5 border border-slate-800 bg-slate-900">
+        <h2 class="text-base font-semibold text-white mb-3">Obchodní úrovně (Entry / SL / TP)</h2>
+        <div class="grid grid-cols-2 gap-3 text-sm">
+          <div class="bg-slate-950 p-3 rounded-lg border border-slate-800">
+            <div class="text-xs text-slate-400">Vstup (Entry)</div>
+            <div id="lvl-entry" class="text-lg font-bold text-white">--</div>
+          </div>
+          <div class="bg-slate-950 p-3 rounded-lg border border-slate-800">
+            <div class="text-xs text-slate-400">Stop-Loss (SL)</div>
+            <div id="lvl-sl" class="text-lg font-bold text-rose-400">--</div>
+          </div>
+          <div class="bg-slate-950 p-3 rounded-lg border border-slate-800">
+            <div class="text-xs text-slate-400">Take-Profit 1 (TP1)</div>
+            <div id="lvl-tp1" class="text-lg font-bold text-emerald-400">--</div>
+          </div>
+          <div class="bg-slate-950 p-3 rounded-lg border border-slate-800">
+            <div class="text-xs text-slate-400">Take-Profit 2 (TP2)</div>
+            <div id="lvl-tp2" class="text-lg font-bold text-emerald-300">--</div>
+          </div>
+        </div>
+        <div id="rrr-text" class="text-xs text-slate-400 mt-3"></div>
+      </div>
+
+      <div class="rounded-xl p-5 border border-slate-800 bg-slate-900">
+        <h2 class="text-base font-semibold text-white mb-3">Supporty, Rezistence a Indikátory (H1)</h2>
+        <div class="grid grid-cols-2 gap-x-6 gap-y-2 text-sm">
+          <div class="flex justify-between"><span class="text-slate-400">Rezistence R2:</span><span id="lvl-r2" class="font-mono text-rose-300">--</span></div>
+          <div class="flex justify-between"><span class="text-slate-400">EMA 20 (H1):</span><span id="ind-ema20" class="font-mono">--</span></div>
+          <div class="flex justify-between"><span class="text-slate-400">Rezistence R1:</span><span id="lvl-r1" class="font-mono text-rose-400">--</span></div>
+          <div class="flex justify-between"><span class="text-slate-400">EMA 50 (H1):</span><span id="ind-ema50" class="font-mono">--</span></div>
+          <div class="flex justify-between"><span class="text-slate-400">Denní Pivot:</span><span id="lvl-pivot" class="font-mono text-sky-400">--</span></div>
+          <div class="flex justify-between"><span class="text-slate-400">EMA 200 (H1):</span><span id="ind-ema200" class="font-mono">--</span></div>
+          <div class="flex justify-between"><span class="text-slate-400">Support S1:</span><span id="lvl-s1" class="font-mono text-emerald-400">--</span></div>
+          <div class="flex justify-between"><span class="text-slate-400">RSI (14):</span><span id="ind-rsi" class="font-mono">--</span></div>
+          <div class="flex justify-between"><span class="text-slate-400">Support S2:</span><span id="lvl-s2" class="font-mono text-emerald-300">--</span></div>
+          <div class="flex justify-between"><span class="text-slate-400">ATR (14):</span><span id="ind-atr" class="font-mono">--</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROČ otevřít / neotevírat pozici -->
+    <div class="rounded-xl p-5 border border-slate-800 bg-slate-900">
+      <h2 class="text-base font-semibold text-white mb-3">Proč robot doporučuje tento krok</h2>
+      <ul id="reasons-list" class="space-y-2 text-sm"></ul>
+    </div>
+
+    <!-- Živý TradingView graf -->
+    <div class="rounded-xl overflow-hidden border border-slate-800 bg-slate-900">
+      <div class="p-3 border-b border-slate-800 text-sm font-semibold text-white">Živý graf NYMEX:NG1! (TradingView)</div>
+      <div class="h-[460px]">
+        <iframe
+          src="https://s.tradingview.com/widgetembed/?symbol=NYMEX%3ANG1!&interval=60&theme=dark&style=1&locale=cs&toolbarbg=0f172a&studies=EMA@tv-basicstudies%1FRSI@tv-basicstudies"
+          class="w-full h-full border-0">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- Aktuální zprávy & sentiment -->
+    <div class="rounded-xl p-5 border border-slate-800 bg-slate-900">
+      <h2 class="text-base font-semibold text-white mb-3">Čerstvé zprávy (Počasí, EIA, LNG)</h2>
+      <ul id="news-list" class="space-y-2 text-sm"></ul>
+    </div>
+
+    <p class="text-xs text-slate-500 text-center pb-4">
+      Upozornění: Tento nástroj slouží výhradně k technické a informační analýze, nikoliv jako investiční poradenství. Obchodování CFD na zemní plyn je vysoce rizikové.
+    </p>
+  </div>
+
+  <script>
+    let rawData = null;
+
+    function fmt(val, offset = 0) {
+      return (val + offset).toFixed(3);
+    }
+
+    function render(offset = 0) {
+      if (!rawData) return;
+      const d = rawData;
+
+      document.getElementById("updated-at").textContent = "Poslední aktualizace: " + d.updated_at;
+      document.getElementById("price").textContent = fmt(d.price, offset);
+
+      const chEl = document.getElementById("change-pct");
+      chEl.textContent = (d.change_pct >= 0 ? "+" : "") + d.change_pct + " %";
+      chEl.className = "text-sm font-semibold " + (d.change_pct >= 0 ? "text-emerald-400" : "text-rose-400");
+
+      const sigCard = document.getElementById("signal-card");
+      const sigText = document.getElementById("signal-text");
+      sigText.textContent = d.action_cz;
+      if (d.signal === "LONG") {
+        sigCard.className = "md:col-span-2 rounded-xl p-6 border border-emerald-700/60 bg-emerald-950/30 flex flex-col justify-between";
+        sigText.className = "text-3xl font-extrabold mt-1 text-emerald-400";
+      } else if (d.signal === "SHORT") {
+        sigCard.className = "md:col-span-2 rounded-xl p-6 border border-rose-700/60 bg-rose-950/30 flex flex-col justify-between";
+        sigText.className = "text-3xl font-extrabold mt-1 text-rose-400";
+      } else {
+        sigCard.className = "md:col-span-2 rounded-xl p-6 border border-amber-700/60 bg-amber-950/20 flex flex-col justify-between";
+        sigText.className = "text-3xl font-extrabold mt-1 text-amber-400";
+      }
+
+      document.getElementById("plan-note").textContent = d.plan.note;
+      document.getElementById("score-label").textContent = `Skóre: ${d.score > 0 ? "+" : ""}${d.score} / 100`;
+      const pct = Math.max(0, Math.min(100, (d.score + 100) / 2));
+      const bar = document.getElementById("score-bar");
+      bar.style.width = pct + "%";
+      bar.className = "h-full transition-all duration-500 " + (d.score >= 30 ? "bg-emerald-500" : d.score <= -30 ? "bg-rose-500" : "bg-amber-400");
+
+      // Úrovně
+      document.getElementById("lvl-entry").textContent = fmt(d.plan.entry, offset);
+      document.getElementById("lvl-sl").textContent = fmt(d.plan.sl, offset);
+      document.getElementById("lvl-tp1").textContent = fmt(d.plan.tp1, offset);
+      document.getElementById("lvl-tp2").textContent = fmt(d.plan.tp2, offset);
+      document.getElementById("rrr-text").textContent = d.plan.rrr > 0 ? `Poměr rizika a zisku (RRR na TP1): 1 : ${d.plan.rrr}` : "Čeká se na průraz mimo pásmo S1–R1.";
+
+      document.getElementById("lvl-r2").textContent = fmt(d.levels.r2, offset);
+      document.getElementById("lvl-r1").textContent = fmt(d.levels.r1, offset);
+      document.getElementById("lvl-pivot").textContent = fmt(d.levels.pivot, offset);
+      document.getElementById("lvl-s1").textContent = fmt(d.levels.s1, offset);
+      document.getElementById("lvl-s2").textContent = fmt(d.levels.s2, offset);
+
+      document.getElementById("ind-ema20").textContent = fmt(d.indicators.ema20, offset);
+      document.getElementById("ind-ema50").textContent = fmt(d.indicators.ema50, offset);
+      document.getElementById("ind-ema200").textContent = fmt(d.indicators.ema200, offset);
+      document.getElementById("ind-rsi").textContent = d.indicators.rsi;
+      document.getElementById("ind-atr").textContent = d.indicators.atr.toFixed(3);
+
+      // Varování
+      const wBox = document.getElementById("warnings-box");
+      if (d.warnings && d.warnings.length > 0) {
+        wBox.classList.remove("hidden");
+        wBox.innerHTML = d.warnings.map(w =>
+          `<div class="bg-amber-950/60 border border-amber-700/60 text-amber-200 px-4 py-2 rounded-lg text-sm">⚠️ ${w}</div>`
+        ).join("");
+      } else {
+        wBox.classList.add("hidden");
+      }
+
+      // Důvody
+      document.getElementById("reasons-list").innerHTML = d.reasons.map(r => {
+        const dot = r.type === "bull" ? "🟢" : r.type === "bear" ? "🔴" : "🟡";
+        return `<li class="flex gap-2 items-start"><span class="mt-0.5">${dot}</span><span>${r.text}</span></li>`;
+      }).join("");
+
+      // Zprávy
+      document.getElementById("news-list").innerHTML = d.news.map(n => {
+        const badge = n.sentiment === "BULLISH"
+          ? '<span class="px-2 py-0.5 rounded text-xs bg-emerald-900/60 text-emerald-300">Býčí</span>'
+          : n.sentiment === "BEARISH"
+          ? '<span class="px-2 py-0.5 rounded text-xs bg-rose-900/60 text-rose-300">Medvědí</span>'
+          : '<span class="px-2 py-0.5 rounded text-xs bg-slate-800 text-slate-400">Neutrální</span>';
+        return `<li class="flex justify-between items-center gap-3 border-b border-slate-800/70 pb-2">
+          <a href="${n.link}" target="_blank" class="hover:text-sky-400 transition">${n.title}</a>
+          ${badge}
+        </li>`;
+      }).join("");
+    }
+
+    function applyXtbOffset() {
+      const val = parseFloat(document.getElementById("xtb-price").value);
+      if (!rawData || isNaN(val)) return render(0);
+      render(val - rawData.price);
+    }
+
+    async function loadData() {
+      try {
+        const res = await fetch("data.json?t=" + Date.now());
+        rawData = await res.json();
+        render(0);
+      } catch (e) {
+        document.getElementById("signal-text").textContent = "Čekám na první běh robota (data.json)";
+      }
+    }
+
+    loadData();
+  </script>
+</body>
+</html>
