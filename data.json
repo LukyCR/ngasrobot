@@ -1,13 +1,13 @@
 {
-  "updated_at": "27.11.2026 17:29 SEČ",
+  "updated_at": "27.11.2026 18:29 SEČ",
   "symbol": "NG=F (Henry Hub Futures)",
-  "price": 3.506,
-  "change_pct": 7.25,
+  "price": 3.515,
+  "change_pct": 7.53,
   "signal": "NEUTRAL",
   "action_cz": "ČEKAT (NEOTEVÍRAT POZICI)",
-  "score": 7,
+  "score": -1,
   "plan": {
-    "entry": 3.506,
+    "entry": 3.515,
     "sl": 3.196,
     "tp1": 3.371,
     "tp2": 3.473,
@@ -15,12 +15,12 @@
     "note": "Trh nemá jasnou převahu. Čekej na průraz R1 (3.371) pro Long nebo S1 (3.196) pro Short."
   },
   "indicators": {
-    "ema20": 3.639,
-    "ema50": 3.627,
-    "ema200": 3.455,
-    "rsi": 27.9,
-    "macd": -0.0126,
-    "atr": 0.044
+    "ema20": 3.628,
+    "ema50": 3.622,
+    "ema200": 3.456,
+    "rsi": 30.0,
+    "macd": -0.0207,
+    "atr": 0.043
   },
   "levels": {
     "r2": 3.473,
@@ -54,7 +54,7 @@
   "reasons": [
     {
       "type": "bull",
-      "text": "Denní trend (D1) je býčí: cena (3.506) je nad D1 EMA50 (3.094)."
+      "text": "Denní trend (D1) je býčí: cena (3.515) je nad D1 EMA50 (3.094)."
     },
     {
       "type": "neutral",
@@ -62,11 +62,11 @@
     },
     {
       "type": "bull",
-      "text": "Cena se drží nad H1 EMA200 (3.455)."
+      "text": "Cena se drží nad H1 EMA200 (3.456)."
     },
     {
-      "type": "bull",
-      "text": "RSI (14) je přeprodané (27.9) – šance na odraz nahoru."
+      "type": "neutral",
+      "text": "RSI (14) na H1 je neutrální (30.0)."
     },
     {
       "type": "bear",
@@ -92,6 +92,12 @@
       "sentiment": "NEUTRAL"
     },
     {
+      "title": "NOPEC Announces January 2027 Natural Gas Rates - City of Mentor, Ohio",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBoU3h2QTB0LVQ5d2draG1OS0ZNcEowNm5wM3ZRQlZQOUNXT2ZCckZEMk03OVVCS3hPRWxqSW1MRWR6VzZmMFNod3hxZ0lCbmo1LXJqQV9oUVhOY0hvYkNtckZMSDM1TWtpTGRRa1RQS3JRZw?oc=5",
+      "date": "Fri, 27 Nov 2026 14:37:59 GMT",
+      "sentiment": "NEUTRAL"
+    },
+    {
       "title": "Natural Gas Supply Association Lobbies As Gas Reviews Change - Legis1",
       "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9PVkM4azMxVWRCM0Fad2Z0STNRS1JNQzZYVHhUSFpKXzZRMnVNY0x2TXRGV1pWX0tiWXBWZ1JQdDJHSkkxX09XOE5qNVFhX1JiMDIwVlZIa2VCSWVPMVAzeVJNXzdJeG1kck1GcVcyQmNEY0todGJ6U2lfbw?oc=5",
       "date": "Fri, 27 Nov 2026 16:14:04 GMT",
@@ -110,21 +116,15 @@
       "sentiment": "BEARISH"
     },
     {
-      "title": "Chevron subsidiaries rank first and third on Colorado gas producers list - The Business Journals",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNd1k4QzVEZTZxS0ZIOWVqR1lMeDN6QTRFUkgxLUNFaEtFc0VwT2gtOU52MEN3TWREUWlpamlFaWQxZDlCXzhFeTR5SThfSGFhdUdOWEdtVlk2Y1hTTnVPTS1Gd2Q0b05MTmNVbHR3RW9XbkZOM3FPeUNzZjBEd2s4ZGotT1BDT3JLMDNUSlN0VVYxRnhuaEJ1UFhHWnN0U216QWc?oc=5",
-      "date": "Fri, 27 Nov 2026 12:00:00 GMT",
-      "sentiment": "NEUTRAL"
-    },
-    {
       "title": "New Big Boy in Middleburg Heights ransacked & left with natural gas leak - Cleveland.com",
       "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQeUFYMVhvTTZVUWIwV1Ztdm5fRmR0UGQ0VUJQeHo1Wk15Q1F5eHdkVjNWMTEzRGthS1VXVHZjZGZsNVNobktjSFV6SlZNZlc2d0R0T2R0bTdibEJRRWRvZll2dHhHYm9qQ0lOQ3UyRmx6MWpsSE02YVJoRGdYRVkySjhuLUxXcktoZlR0ODAwTzhlWlFkNkc0c0pyMXdWaDNBcGZFbFlqamRtRGNjNk94RkdwRUFvejVrei1J?oc=5",
       "date": "Fri, 27 Nov 2026 15:23:00 GMT",
       "sentiment": "NEUTRAL"
     },
     {
-      "title": "Natural Gas Liquids Market Set For Rapid Expansion With 7.5% CAGR Through 2030 - EIN Presswire",
-      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQa19WQ0ZmNjYyVVRFWHFiN3EyTllscWlKRzZ1VVAxdFNiWm1xdnBUVU4ydWNENVlPaThiaGJiMXhYMzdNUjliWXQ3OHllTXcwRGFid3pSZFlaQUttSEhwTE5FazU3T0ppUGdhbmZHN2lURmtuMkxTUlhxVmRrdzlNMl9BZFNvWE93bU9oUnFOTFcxcGkyaVdJSGc2bk13M0pFMENZdkEzRnRqZHJJYXAxVTRHM1FaMnotOU9HUkpZMy1KQQ?oc=5",
-      "date": "Fri, 27 Nov 2026 16:00:00 GMT",
+      "title": "Chevron subsidiaries rank first and third on Colorado gas producers list - The Business Journals",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNd1k4QzVEZTZxS0ZIOWVqR1lMeDN6QTRFUkgxLUNFaEtFc0VwT2gtOU52MEN3TWREUWlpamlFaWQxZDlCXzhFeTR5SThfSGFhdUdOWEdtVlk2Y1hTTnVPTS1Gd2Q0b05MTmNVbHR3RW9XbkZOM3FPeUNzZjBEd2s4ZGotT1BDT3JLMDNUSlN0VVYxRnhuaEJ1UFhHWnN0U216QWc?oc=5",
+      "date": "Fri, 27 Nov 2026 12:00:00 GMT",
       "sentiment": "NEUTRAL"
     }
   ]
