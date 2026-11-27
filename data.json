@@ -1,5 +1,5 @@
 {
-  "updated_at": "27.11.2026 12:44 SEČ",
+  "updated_at": "27.11.2026 13:54 SEČ",
   "symbol": "NG=F (Henry Hub Futures)",
   "price": 3.68,
   "change_pct": 12.57,
@@ -54,7 +54,7 @@
   "reasons": [
     {
       "type": "bull",
-      "text": "Denní trend (D1) je býčí: cena (3.680) je nad D1 EMA50 (3.096)."
+      "text": "Denní trend (D1) je býčí: cena (3.680) je nad D1 EMA50 (3.095)."
     },
     {
       "type": "bull",
@@ -80,9 +80,15 @@
   "warnings": [],
   "news": [
     {
-      "title": "The Scientist Who Kickstarted Pennsylvania’s Fracking Boom Thought Gas Would Be a ‘Bridge Fuel’ - Inside Climate News",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQZWNNUXR6UkxRQlZHVWJlVmxXZVYzQUltVFF5QTZHOG1wNEdPb0g5eF9qWjlQa3o5YUVYMHdQRVFKRmhXdFlKLWhDMXN1c3c2TG9xYTBRS1pvWXlPZmVyQVRjaUpTRE9XOFhXcmhtWXcyd2liNTBCSG5vX0d2UXNkWV9XMC1wQXhwU0VUSXpweWVHQlBvVkxGaWJ5MEdpNW1nbUE?oc=5",
-      "date": "Fri, 27 Nov 2026 10:00:00 GMT",
+      "title": "Russian domestic natural gas price may complicate talks with China, analyst says - Reuters",
+      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQNHJSUDNXTTVWWEpBdmZJMEhFc2V2THkwZm5aYm1WLXhKRG9kYkl0V1g4V0oxeHNTZkVIQnZiX0sxOWM5ME85Q2RMUDlHSDZMQVM3dTB4MFZQa1VPbkEyOUI5b2VnV0EyXzRlUldCYl9MV2JiUzJPcHc1cnF4OXBPZHBIVjVxdU5TUnByaGdidjZwUGFPdFZJNUJjUkZUcTNHT0otNlVDZklOTmRxc3NHM2w2aHIyTnJPeTgxaGRJamI4X0tkcV93c0ZFUQ?oc=5",
+      "date": "Fri, 27 Nov 2026 12:21:44 GMT",
+      "sentiment": "NEUTRAL"
+    },
+    {
+      "title": "Chevron subsidiaries rank first and third on Colorado gas producers list - The Business Journals",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNd1k4QzVEZTZxS0ZIOWVqR1lMeDN6QTRFUkgxLUNFaEtFc0VwT2gtOU52MEN3TWREUWlpamlFaWQxZDlCXzhFeTR5SThfSGFhdUdOWEdtVlk2Y1hTTnVPTS1Gd2Q0b05MTmNVbHR3RW9XbkZOM3FPeUNzZjBEd2s4ZGotT1BDT3JLMDNUSlN0VVYxRnhuaEJ1UFhHWnN0U216QWc?oc=5",
+      "date": "Fri, 27 Nov 2026 12:00:00 GMT",
       "sentiment": "NEUTRAL"
     },
     {
@@ -110,15 +116,9 @@
       "sentiment": "NEUTRAL"
     },
     {
-      "title": "Bridging the Grid: Solar, Storage, and Natural Gas Solutions - Mexico Business News",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQejNnUlBRS3M0Z2lENVRTNWktaGxrLUF4akI3bHhRU01sVEFGUHhlQWwxQnZGN09wdEpMMFJjbDRlY3M5aDdtdXNUdmxUckcwWGFYNWtlZjNKbGlsVEFPSFI1WEV4SlRkczljSVBpY3RReTZfd0txOGlBQjE3NG1FMDVSUGpxWjJDMDF0QXlNZDBNQ2p2WjFTZQ?oc=5",
-      "date": "Thu, 26 Nov 2026 17:04:07 GMT",
-      "sentiment": "NEUTRAL"
-    },
-    {
-      "title": "More than 200,000 plug-in carbon monoxide and natural gas detectors recalled - rocketcitynow.com",
-      "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOakpwdmdOWnpkaG14cUJZMXZDcnVzY0tMVDRhY2cyREVwaFJidm9wZG1KVUtQUENMQUsxV1pobFlSRXVYSVZZTTU2V2hxWWxWdWQ2dWVablVuZ1l0ak1Ya0o1d01tR3hjR2dHb05PMDVyVk9ZQzJXRExVUGdheEludDV0NmJWWXh5QXFfbVRPS1pFX3lhNzVmVzdJUGdwcWgwcC1ZY1FQRmxoS1NRejJCbU0xaGlwYmN1UHJmd2hLWGJJZDF1MHgwbzZTazE0dkpBeC1SVTZTVlBGNkhKWElycXVPOUc4ejFXelEydGpCYXF5bVloS2pVOHhWNU45azNWSEE?oc=5",
-      "date": "Thu, 26 Nov 2026 21:47:00 GMT",
+      "title": "Mike McGlone: U.S. natural gas could drive post-inflation deflation in 2027 - Traders Union",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPZFNEOWFtVVQ2ZnJ4aktKV3VEc0FPSW5JTmxqa1F0M1gydV9pVHdrUGplb2FaQmFmNmR4d3RXeGhSSXM0OHNFWXNBTkdUZXVsNXcwaDJWWjZ1VGM0OXB4LXN3UnRRakYwRmRNY28zRnQwc1h6T0gwNEE2NHNKc2wyX2hLUWl4RE1tSEtCNC1FSms?oc=5",
+      "date": "Fri, 27 Nov 2026 12:30:46 GMT",
       "sentiment": "NEUTRAL"
     },
     {
