@@ -1,13 +1,13 @@
 {
-  "updated_at": "27.11.2026 20:26 SEČ",
+  "updated_at": "27.11.2026 21:23 SEČ",
   "symbol": "NG=F (Henry Hub Futures)",
-  "price": 3.507,
-  "change_pct": 7.28,
+  "price": 3.509,
+  "change_pct": 7.34,
   "signal": "NEUTRAL",
   "action_cz": "ČEKAT (NEOTEVÍRAT POZICI)",
   "score": -16,
   "plan": {
-    "entry": 3.507,
+    "entry": 3.509,
     "sl": 3.196,
     "tp1": 3.371,
     "tp2": 3.473,
@@ -15,11 +15,11 @@
     "note": "Trh nemá jasnou převahu. Čekej na průraz R1 (3.371) pro Long nebo S1 (3.196) pro Short."
   },
   "indicators": {
-    "ema20": 3.616,
+    "ema20": 3.617,
     "ema50": 3.618,
     "ema200": 3.456,
-    "rsi": 29.5,
-    "macd": -0.0273,
+    "rsi": 29.7,
+    "macd": -0.0271,
     "atr": 0.041
   },
   "levels": {
@@ -54,11 +54,11 @@
   "reasons": [
     {
       "type": "bull",
-      "text": "Denní trend (D1) je býčí: cena (3.507) je nad D1 EMA50 (3.094)."
+      "text": "Denní trend (D1) je býčí: cena (3.509) je nad D1 EMA50 (3.093)."
     },
     {
       "type": "bear",
-      "text": "Medvědí intradenní struktura H1: cena < EMA20 (3.616) < EMA50 (3.618)."
+      "text": "Medvědí intradenní struktura H1: cena < EMA20 (3.617) < EMA50 (3.618)."
     },
     {
       "type": "bull",
@@ -66,7 +66,7 @@
     },
     {
       "type": "neutral",
-      "text": "RSI (14) na H1 je neutrální (29.5)."
+      "text": "RSI (14) na H1 je neutrální (29.7)."
     },
     {
       "type": "bear",
@@ -106,6 +106,12 @@
       "sentiment": "BEARISH"
     },
     {
+      "title": "Iran, Turkey Extend Natural Gas Deal - Rigzone",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOdm1xcDRDemVocUpjZDd2MG1WN0NRendNVDh1bmVJQmpyTTdxRm9wbUVubk5yYThMYUZqejNsZkh5bTQyeE96Q2xtblVuS2pMSDAzT0RKeHNJb25rR1dsXzJuVlcwZ196V1J4OVlZMHNkZGxvbmVlcmlwSE9zNXppZTV1MXFZU0FTTjhZU1I3djBIQTE0NmZVZEJNTC1VZw?oc=5",
+      "date": "Fri, 27 Nov 2026 15:48:00 GMT",
+      "sentiment": "NEUTRAL"
+    },
+    {
       "title": "US natural gas futures drop 5% as warmer weather outlook curbs heating demand - marketscreener.com",
       "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNdG41V0pHeG9MQVdkRWllSWxRSFY1TmZSb1UxakkwTms4eDBybjlOaFdHTmozMXYtdDdTZm1VdHVjLWJObGNTNGhJcXNBekRfUFdnOHlYT1ViNWpxZEVCQXNDTHFVRk1iMFVKcWYtVmJQRExlLXNRcjkweERWNjBycDlMXzc5RDl6NGI5THhLZ01Iak4yUlBRVlo0RjFmRWdwOW9iVHV1cmkycFFlaHhoS2dZbVZPbTRxTGd0cExJWWdtMkFMUFpaWA?oc=5",
       "date": "Fri, 27 Nov 2026 15:16:45 GMT",
@@ -121,12 +127,6 @@
       "title": "New Big Boy in Middleburg Heights ransacked & left with natural gas leak - Cleveland.com",
       "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQeUFYMVhvTTZVUWIwV1Ztdm5fRmR0UGQ0VUJQeHo1Wk15Q1F5eHdkVjNWMTEzRGthS1VXVHZjZGZsNVNobktjSFV6SlZNZlc2d0R0T2R0bTdibEJRRWRvZll2dHhHYm9qQ0lOQ3UyRmx6MWpsSE02YVJoRGdYRVkySjhuLUxXcktoZlR0ODAwTzhlWlFkNkc0c0pyMXdWaDNBcGZFbFlqamRtRGNjNk94RkdwRUFvejVrei1J?oc=5",
       "date": "Fri, 27 Nov 2026 15:23:00 GMT",
-      "sentiment": "NEUTRAL"
-    },
-    {
-      "title": "Chevron subsidiaries rank first and third on Colorado gas producers list - The Business Journals",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNd1k4QzVEZTZxS0ZIOWVqR1lMeDN6QTRFUkgxLUNFaEtFc0VwT2gtOU52MEN3TWREUWlpamlFaWQxZDlCXzhFeTR5SThfSGFhdUdOWEdtVlk2Y1hTTnVPTS1Gd2Q0b05MTmNVbHR3RW9XbkZOM3FPeUNzZjBEd2s4ZGotT1BDT3JLMDNUSlN0VVYxRnhuaEJ1UFhHWnN0U216QWc?oc=5",
-      "date": "Fri, 27 Nov 2026 12:00:00 GMT",
       "sentiment": "NEUTRAL"
     }
   ]
