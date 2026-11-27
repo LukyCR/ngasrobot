@@ -1,5 +1,5 @@
 {
-  "updated_at": "27.11.2026 11:45 SEČ",
+  "updated_at": "27.11.2026 12:44 SEČ",
   "symbol": "NG=F (Henry Hub Futures)",
   "price": 3.68,
   "change_pct": 12.57,
@@ -54,7 +54,7 @@
   "reasons": [
     {
       "type": "bull",
-      "text": "Denní trend (D1) je býčí: cena (3.680) je nad D1 EMA50 (3.097)."
+      "text": "Denní trend (D1) je býčí: cena (3.680) je nad D1 EMA50 (3.096)."
     },
     {
       "type": "bull",
@@ -80,6 +80,12 @@
   "warnings": [],
   "news": [
     {
+      "title": "The Scientist Who Kickstarted Pennsylvania’s Fracking Boom Thought Gas Would Be a ‘Bridge Fuel’ - Inside Climate News",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQZWNNUXR6UkxRQlZHVWJlVmxXZVYzQUltVFF5QTZHOG1wNEdPb0g5eF9qWjlQa3o5YUVYMHdQRVFKRmhXdFlKLWhDMXN1c3c2TG9xYTBRS1pvWXlPZmVyQVRjaUpTRE9XOFhXcmhtWXcyd2liNTBCSG5vX0d2UXNkWV9XMC1wQXhwU0VUSXpweWVHQlBvVkxGaWJ5MEdpNW1nbUE?oc=5",
+      "date": "Fri, 27 Nov 2026 10:00:00 GMT",
+      "sentiment": "NEUTRAL"
+    },
+    {
       "title": "Natural Gas Price Forecast: Breakout Faces Critical Support Test - FXEmpire",
       "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOeTB2NmN5M0hxaU9LalppWXNYSHN2aG1heXREVmFVY3ZFSGJVUjBjNVJWT2tyUWVqdDdZWWRSSS1WX0F0YmJUM2tPT2FaSHl2eDYzQkRCYzZTZmRvbUtNXy12UTZBWlIxMlQ1MFNkUnBhZGV5ZS1nRnJ3SzdGVmpkUXFzNWZ3QTlLeGN3Q2hxT1N2d3ZmcDJXR0ZERHFITnI1c0x5VlB0cGxXWnJpN2ZOSXYtd18?oc=5",
       "date": "Fri, 27 Nov 2026 05:44:00 GMT",
@@ -89,6 +95,18 @@
       "title": "Iran and Turkey Extend Natural Gas Deal Amid US Economic Pressure - Bloomberg.com",
       "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQUjBwYlcxdllzX2lQVDVlZE1iTXZ4M1B0c3Fza2tkdFVjczZLSGxJOXFjRmxTQW1PNVY2WDVaQzZBMm11VlJyclBoQnZ5X2JrbEI1a250aS1OWmRleWFrZTBKclliZWxCMHpqU2lYQTlha3BkQXUzQWtUb0JkeUlyQXlPdk5CU0RNOTd0NzlCeFJpak1MVzRBYWZJaWpIVHJzc1JhdURwOG9IdW1fTTdFcVFqTQ?oc=5",
       "date": "Fri, 27 Nov 2026 08:11:53 GMT",
+      "sentiment": "NEUTRAL"
+    },
+    {
+      "title": "How data centers are driving a US natural-gas boom - MIT Technology Review",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNZkd0cUJhM0U1VVU5S2FUbHVVbV9QdUZxTUlDX1RncmtNeEtpb1ZIR04yZHFhRHFNM0dwaXJMQ3FGRHJPVDJ1V2ZlXzFnLU1oUWtFTGs3MU5JZHBxeE1MVFVTaEVENm5DVzJxYnVTaV9zR1ZnY1dRQVBSdWtlaE5HSS1Ld3A1Wm5YT1HSAY8BQVVfeXFMUHl1VjVtUmtTQlhoYTdUc0lDdmVqa09vZFhJR2RoV3VwOXNLdDdwOE1Ickg3WnlvS2hEX0RyTTRwNy1aTzNicjFhVjBhbURLYU45d1AwM0I2WmtiX3BFUV9SV2ktMFp3dnZMcURkcGtNMkNxZnVwbFdGTWtwVjl2OEhGai03UjdUQmdXaVFNQWs?oc=5",
+      "date": "Wed, 25 Nov 2026 17:00:00 GMT",
+      "sentiment": "NEUTRAL"
+    },
+    {
+      "title": "'We just don't want to be bothered': Natural gas pipeline could cut through 100 acres of a Tennessee Century Farm - News Channel 5 Nashville",
+      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOOEo3SURCRjZEYmxuU2l2cWpGaHF2NUNvbHpvQ1NZTzc3UjdzUFQxNlNHVXd6eHdhYjQ5MmtnWGRNUXQwc2pnMGQ4Z1FmVUtXRi1wcm1pWnVMNTNxWkM0ckI3bnkyVzEzZndaVXBHVWtPSXYtVUdZeTJyWnJPMHlnT21mMmZCWEptQUg0NnFfbWxJMXJlWFotcEZEQ245QjhBV3hvOE9IOVNWQkctNTRmUXcxb0VtZU1ZYXBCU2o1MV9RUmN4UmxhSlV5dXkwY0JQMTN1YjkycnplNl9TNTdVZHF5Uzg?oc=5",
+      "date": "Fri, 27 Nov 2026 11:04:40 GMT",
       "sentiment": "NEUTRAL"
     },
     {
@@ -104,27 +122,9 @@
       "sentiment": "NEUTRAL"
     },
     {
-      "title": "Data centers are getting their own natural gas power plants - MIT Technology Review",
-      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQUEwxbFI5aGt1bmZxcWUwamFGeFZjODJTbzUzdHVjYUdKTzZGNkZvNHNJT1lCMl9JTUNYcHI0cFREbFlhWU05aWk1TW02VXUxM090UmF4bThwM084ODRadUstWTZwcmE1ZGYxSXpiWDNFUWc4SnZZMHVaUThkWUhnWG14WdIBiAFBVV95cUxPR2llV2tYT0pWTE1WUDhZNG5MU3dSSXJJbUZod3BBNlZ4UEpzOTh5YXE2UEM0aGtVV0JydUdsWU5DR1d2ZmxyaEZveVRNTTFNdHBTTERoeU5FZVNjZkdNczZhbmpUN0lSc1AxeHk5bmdqRWlveUdlZEJIX1lYTk93ZDl6UmlZRkRy?oc=5",
-      "date": "Tue, 24 Nov 2026 11:00:00 GMT",
-      "sentiment": "NEUTRAL"
-    },
-    {
-      "title": "China Gas Holdings H1 revenue rises on higher natural gas prices - TradingView",
-      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNRVhMWUZQcXY2UWxvQmNsSHNMMS1zRV8za1BJd1Q5RkNFT2F3ZDlkdTNwZERteXk5VEVGWnZvVm5McGNEYnlFU2gxTzk0eHJ4enN3dXhiODhIX3FqaFE3VjE1ZzdhRWNVdzVHZlZmTWZLU0gxeDF0STBuVGhhZzViZXgyOHg2QTFmaEVMLU9iNC1lZ2tRdXJWUGJYeV8tN3R3S0draUpqdTAzQlVoN01Ia21zbzN1Y0VWVmI4TnRJTXk0eEZFeGxYVEc3QXU2eFU?oc=5",
-      "date": "Fri, 27 Nov 2026 08:39:43 GMT",
-      "sentiment": "NEUTRAL"
-    },
-    {
-      "title": "Barchart- Is Natural Gas Inexpensive? - Yahoo Finance",
-      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQUlEyLVhoaDBUbm9lbi1Gc09IY1p5ajByNlRLQktIY1MtSzJCV1dvWlNpSFFkUXp6cEpRNE1iUTl5YUc5N29OcUktLXVMS052czVZaUdvMFR2MWlUYlhpUjFzcURTYUxSeU5qTm5hSmk5QnNESTdKbHdNLXB3MDJwUjVlYmFNSG9RQzV6UjRfSXR5UGJSU0E0dkNfR2o4d2FWb3RNSw?oc=5",
-      "date": "Thu, 26 Nov 2026 15:00:02 GMT",
-      "sentiment": "NEUTRAL"
-    },
-    {
-      "title": "Natural Gas Expansion Could Reshape Fertilizer Prices and Farm Costs - AgroLatam",
-      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxONUVxOWNpVXlKdkVHQ1hsUU03QS1ZX2FpTUtySjJYYVh4MTZySTlPXzJjRXkxZ01hak1IOExiX3Jpb2xPc0JtOUhjaFktTmFRcFA0TEFzM3BmNnBtQTVfaTZSMzlmSFVlTl8yWWl3aGo2eDllYXQyQkN4MGZ0c2EzaWFBb081bW9IaEE0S3k2MjRuUWo1eHVoLWpFRFhsa21ySWxSYU43WQ?oc=5",
-      "date": "Thu, 26 Nov 2026 15:36:21 GMT",
+      "title": "US Has More Natural Gas Than It Can Use as War Chokes Global Supply - EnergyNow.com",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOaW9YckZKR1BkZFJLdDZ1bERpSzllSjlmUkV1anV5WXZXRlhaeFJER0NkWmJ2Tm9BeG9SSjUwVjhhV2sxQW4yNFVjQmh1bGZwQk5xSTZUR2M4THBEM0dhQjExSW9IU3BKR3lRb2EtMS0xWklobTF2RzN1SGhBYmJkWUJJc1lqN0Vzcy1iOTdZdnA5T3N6OHk5V2JnLUktYU0?oc=5",
+      "date": "Wed, 25 Nov 2026 15:53:06 GMT",
       "sentiment": "NEUTRAL"
     }
   ]
