@@ -1,13 +1,13 @@
 {
-  "updated_at": "27.11.2026 16:24 SEČ",
+  "updated_at": "27.11.2026 17:29 SEČ",
   "symbol": "NG=F (Henry Hub Futures)",
-  "price": 3.523,
-  "change_pct": 7.77,
+  "price": 3.506,
+  "change_pct": 7.25,
   "signal": "NEUTRAL",
   "action_cz": "ČEKAT (NEOTEVÍRAT POZICI)",
-  "score": 2,
+  "score": 7,
   "plan": {
-    "entry": 3.523,
+    "entry": 3.506,
     "sl": 3.196,
     "tp1": 3.371,
     "tp2": 3.473,
@@ -15,12 +15,12 @@
     "note": "Trh nemá jasnou převahu. Čekej na průraz R1 (3.371) pro Long nebo S1 (3.196) pro Short."
   },
   "indicators": {
-    "ema20": 3.653,
-    "ema50": 3.632,
-    "ema200": 3.454,
-    "rsi": 29.5,
-    "macd": -0.0017,
-    "atr": 0.045
+    "ema20": 3.639,
+    "ema50": 3.627,
+    "ema200": 3.455,
+    "rsi": 27.9,
+    "macd": -0.0126,
+    "atr": 0.044
   },
   "levels": {
     "r2": 3.473,
@@ -54,7 +54,7 @@
   "reasons": [
     {
       "type": "bull",
-      "text": "Denní trend (D1) je býčí: cena (3.523) je nad D1 EMA50 (3.095)."
+      "text": "Denní trend (D1) je býčí: cena (3.506) je nad D1 EMA50 (3.094)."
     },
     {
       "type": "neutral",
@@ -62,11 +62,11 @@
     },
     {
       "type": "bull",
-      "text": "Cena se drží nad H1 EMA200 (3.454)."
+      "text": "Cena se drží nad H1 EMA200 (3.455)."
     },
     {
-      "type": "neutral",
-      "text": "RSI (14) na H1 je neutrální (29.5)."
+      "type": "bull",
+      "text": "RSI (14) je přeprodané (27.9) – šance na odraz nahoru."
     },
     {
       "type": "bear",
@@ -77,9 +77,7 @@
       "text": "Zásoby EIA: +80 Bcf nad 5Y průměrem (Přebytek) (-8 b.)."
     }
   ],
-  "warnings": [
-    "Otevírá se hlavní US seance (14:30–16:00 SEČ) – očekávej vyšší volatilitu."
-  ],
+  "warnings": [],
   "news": [
     {
       "title": "U.S. Natural Gas Futures Fall as Front Month Shifts to January - WSJ",
@@ -94,9 +92,21 @@
       "sentiment": "NEUTRAL"
     },
     {
+      "title": "Natural Gas Supply Association Lobbies As Gas Reviews Change - Legis1",
+      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9PVkM4azMxVWRCM0Fad2Z0STNRS1JNQzZYVHhUSFpKXzZRMnVNY0x2TXRGV1pWX0tiWXBWZ1JQdDJHSkkxX09XOE5qNVFhX1JiMDIwVlZIa2VCSWVPMVAzeVJNXzdJeG1kck1GcVcyQmNEY0todGJ6U2lfbw?oc=5",
+      "date": "Fri, 27 Nov 2026 16:14:04 GMT",
+      "sentiment": "NEUTRAL"
+    },
+    {
       "title": "Natural Gas Price Forecast: Mild US Weather Drives Prices Lower - FXEmpire",
       "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPM01jeVJYTDM5YkdlMzJJejBSV0NOeUhaVm9YUEhWcXhNWlZpVWJfc2Flbnp0NmRYcjl2bXd3VGM5dUlOSTJ4S2NqMy1UYkVUZkhvWDc1WWJxRWtMN3FBVWswNW9QZzdjbWUzZ213S0MyMVZPUnNuZWRnZjZfR1R6bDI4V243bHl2UjN4VVJHeFJ5cVh6ZzB4TkRibGRZd0dPMEhrYUlNV1RyTk9hSzI2Z2xiaw?oc=5",
       "date": "Fri, 27 Nov 2026 14:03:07 GMT",
+      "sentiment": "BEARISH"
+    },
+    {
+      "title": "US natural gas futures drop 5% as warmer weather outlook curbs heating demand - marketscreener.com",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNdG41V0pHeG9MQVdkRWllSWxRSFY1TmZSb1UxakkwTms4eDBybjlOaFdHTmozMXYtdDdTZm1VdHVjLWJObGNTNGhJcXNBekRfUFdnOHlYT1ViNWpxZEVCQXNDTHFVRk1iMFVKcWYtVmJQRExlLXNRcjkweERWNjBycDlMXzc5RDl6NGI5THhLZ01Iak4yUlBRVlo0RjFmRWdwOW9iVHV1cmkycFFlaHhoS2dZbVZPbTRxTGd0cExJWWdtMkFMUFpaWA?oc=5",
+      "date": "Fri, 27 Nov 2026 15:16:45 GMT",
       "sentiment": "BEARISH"
     },
     {
@@ -106,27 +116,15 @@
       "sentiment": "NEUTRAL"
     },
     {
-      "title": "Iran and Turkey Extend Natural Gas Deal Amid US Economic Pressure - Bloomberg.com",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQUjBwYlcxdllzX2lQVDVlZE1iTXZ4M1B0c3Fza2tkdFVjczZLSGxJOXFjRmxTQW1PNVY2WDVaQzZBMm11VlJyclBoQnZ5X2JrbEI1a250aS1OWmRleWFrZTBKclliZWxCMHpqU2lYQTlha3BkQXUzQWtUb0JkeUlyQXlPdk5CU0RNOTd0NzlCeFJpak1MVzRBYWZJaWpIVHJzc1JhdURwOG9IdW1fTTdFcVFqTQ?oc=5",
-      "date": "Fri, 27 Nov 2026 08:11:53 GMT",
+      "title": "New Big Boy in Middleburg Heights ransacked & left with natural gas leak - Cleveland.com",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQeUFYMVhvTTZVUWIwV1Ztdm5fRmR0UGQ0VUJQeHo1Wk15Q1F5eHdkVjNWMTEzRGthS1VXVHZjZGZsNVNobktjSFV6SlZNZlc2d0R0T2R0bTdibEJRRWRvZll2dHhHYm9qQ0lOQ3UyRmx6MWpsSE02YVJoRGdYRVkySjhuLUxXcktoZlR0ODAwTzhlWlFkNkc0c0pyMXdWaDNBcGZFbFlqamRtRGNjNk94RkdwRUFvejVrei1J?oc=5",
+      "date": "Fri, 27 Nov 2026 15:23:00 GMT",
       "sentiment": "NEUTRAL"
     },
     {
-      "title": "How data centers are driving a US natural-gas boom - MIT Technology Review",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNZkd0cUJhM0U1VVU5S2FUbHVVbV9QdUZxTUlDX1RncmtNeEtpb1ZIR04yZHFhRHFNM0dwaXJMQ3FGRHJPVDJ1V2ZlXzFnLU1oUWtFTGs3MU5JZHBxeE1MVFVTaEVENm5DVzJxYnVTaV9zR1ZnY1dRQVBSdWtlaE5HSS1Ld3A1Wm5YT1HSAY8BQVVfeXFMUHl1VjVtUmtTQlhoYTdUc0lDdmVqa09vZFhJR2RoV3VwOXNLdDdwOE1Ickg3WnlvS2hEX0RyTTRwNy1aTzNicjFhVjBhbURLYU45d1AwM0I2WmtiX3BFUV9SV2ktMFp3dnZMcURkcGtNMkNxZnVwbFdGTWtwVjl2OEhGai03UjdUQmdXaVFNQWs?oc=5",
-      "date": "Wed, 25 Nov 2026 17:00:00 GMT",
-      "sentiment": "NEUTRAL"
-    },
-    {
-      "title": "Mike McGlone: U.S. natural gas could drive post-inflation deflation in 2027 - Traders Union",
-      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPZFNEOWFtVVQ2ZnJ4aktKV3VEc0FPSW5JTmxqa1F0M1gydV9pVHdrUGplb2FaQmFmNmR4d3RXeGhSSXM0OHNFWXNBTkdUZXVsNXcwaDJWWjZ1VGM0OXB4LXN3UnRRakYwRmRNY28zRnQwc1h6T0gwNEE2NHNKc2wyX2hLUWl4RE1tSEtCNC1FSms?oc=5",
-      "date": "Fri, 27 Nov 2026 12:30:46 GMT",
-      "sentiment": "NEUTRAL"
-    },
-    {
-      "title": "More than 200K carbon monoxide, natural gas detectors recalled - KHOU",
-      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPZ3hEeUppS2FSX2lsTDFDdy14aVFqdktLbklvT1VkWFdxMU1ESTNnb0FJMWdyV0t2UkdSNXgtQUhCbXQ4Y3NybTlYa2JIMk9yZE8tZWtRYU9rQl9JQ3BwT0NZd2hLMG9FRFJhMTVMUnNXRThjOTNKaU13WVhEb3phN0FIT29iZlR0S3RaamlFNVJaRjNNT0lIS2dBQTNHaFNQeUVudUI2MFBON0sxS2t5M3RNeDVXaTJHQlRoQm1EOXhYZ3Y5bmo2eE52b0hUV0NiQU9SM1BXQjM?oc=5",
-      "date": "Fri, 27 Nov 2026 13:00:09 GMT",
+      "title": "Natural Gas Liquids Market Set For Rapid Expansion With 7.5% CAGR Through 2030 - EIN Presswire",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQa19WQ0ZmNjYyVVRFWHFiN3EyTllscWlKRzZ1VVAxdFNiWm1xdnBUVU4ydWNENVlPaThiaGJiMXhYMzdNUjliWXQ3OHllTXcwRGFid3pSZFlaQUttSEhwTE5FazU3T0ppUGdhbmZHN2lURmtuMkxTUlhxVmRrdzlNMl9BZFNvWE93bU9oUnFOTFcxcGkyaVdJSGc2bk13M0pFMENZdkEzRnRqZHJJYXAxVTRHM1FaMnotOU9HUkpZMy1KQQ?oc=5",
+      "date": "Fri, 27 Nov 2026 16:00:00 GMT",
       "sentiment": "NEUTRAL"
     }
   ]
