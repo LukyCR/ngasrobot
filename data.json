@@ -1,13 +1,13 @@
 {
-  "updated_at": "27.11.2026 18:29 SEČ",
+  "updated_at": "27.11.2026 19:17 SEČ",
   "symbol": "NG=F (Henry Hub Futures)",
-  "price": 3.515,
-  "change_pct": 7.53,
+  "price": 3.507,
+  "change_pct": 7.28,
   "signal": "NEUTRAL",
   "action_cz": "ČEKAT (NEOTEVÍRAT POZICI)",
-  "score": -1,
+  "score": -19,
   "plan": {
-    "entry": 3.515,
+    "entry": 3.507,
     "sl": 3.196,
     "tp1": 3.371,
     "tp2": 3.473,
@@ -15,12 +15,12 @@
     "note": "Trh nemá jasnou převahu. Čekej na průraz R1 (3.371) pro Long nebo S1 (3.196) pro Short."
   },
   "indicators": {
-    "ema20": 3.628,
-    "ema50": 3.622,
+    "ema20": 3.616,
+    "ema50": 3.618,
     "ema200": 3.456,
-    "rsi": 30.0,
-    "macd": -0.0207,
-    "atr": 0.043
+    "rsi": 29.5,
+    "macd": -0.0273,
+    "atr": 0.041
   },
   "levels": {
     "r2": 3.473,
@@ -54,11 +54,11 @@
   "reasons": [
     {
       "type": "bull",
-      "text": "Denní trend (D1) je býčí: cena (3.515) je nad D1 EMA50 (3.094)."
+      "text": "Denní trend (D1) je býčí: cena (3.507) je nad D1 EMA50 (3.094)."
     },
     {
-      "type": "neutral",
-      "text": "H1 klouzavé průměry EMA20/EMA50 jsou v konsolidaci."
+      "type": "bear",
+      "text": "Medvědí intradenní struktura H1: cena < EMA20 (3.616) < EMA50 (3.618)."
     },
     {
       "type": "bull",
@@ -66,7 +66,7 @@
     },
     {
       "type": "neutral",
-      "text": "RSI (14) na H1 je neutrální (30.0)."
+      "text": "RSI (14) na H1 je neutrální (29.5)."
     },
     {
       "type": "bear",
@@ -77,7 +77,9 @@
       "text": "Zásoby EIA: +80 Bcf nad 5Y průměrem (Přebytek) (-8 b.)."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    "Páteční večer: Zvýšené riziko víkendového gapu kvůli novým běhům modelů počasí (GFS/ECMWF)."
+  ],
   "news": [
     {
       "title": "U.S. Natural Gas Futures Fall as Front Month Shifts to January - WSJ",
@@ -116,15 +118,15 @@
       "sentiment": "BEARISH"
     },
     {
-      "title": "New Big Boy in Middleburg Heights ransacked & left with natural gas leak - Cleveland.com",
-      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQeUFYMVhvTTZVUWIwV1Ztdm5fRmR0UGQ0VUJQeHo1Wk15Q1F5eHdkVjNWMTEzRGthS1VXVHZjZGZsNVNobktjSFV6SlZNZlc2d0R0T2R0bTdibEJRRWRvZll2dHhHYm9qQ0lOQ3UyRmx6MWpsSE02YVJoRGdYRVkySjhuLUxXcktoZlR0ODAwTzhlWlFkNkc0c0pyMXdWaDNBcGZFbFlqamRtRGNjNk94RkdwRUFvejVrei1J?oc=5",
-      "date": "Fri, 27 Nov 2026 15:23:00 GMT",
+      "title": "FERC approves Sabine Pass LNG expansion, four other natural gas projects - BIC Magazine",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQbVlsdmFQcUxrMF93UGwtc1RPbGM2ekNRSGtYOU1MeGc3RVV6a3ZDMkluMjI4Q0tIYTIzQzFhTTlJZnBiU012cVlyMTZfWkhuc0MyY2xPZGVfRGRKWUptTmVZN1lyVUdQRFdLT3VndzBmUDFTSExjVjk3TmNEVjhlbnNFNmN1SHFUTldvM0tMNjNsWEFqMzg3TFltMlc3cDgtNzRLb0JWLVgzeVpyTDI3bk41bTZ3MGtQTkkwUg?oc=5",
+      "date": "Fri, 27 Nov 2026 14:00:00 GMT",
       "sentiment": "NEUTRAL"
     },
     {
-      "title": "Chevron subsidiaries rank first and third on Colorado gas producers list - The Business Journals",
-      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNd1k4QzVEZTZxS0ZIOWVqR1lMeDN6QTRFUkgxLUNFaEtFc0VwT2gtOU52MEN3TWREUWlpamlFaWQxZDlCXzhFeTR5SThfSGFhdUdOWEdtVlk2Y1hTTnVPTS1Gd2Q0b05MTmNVbHR3RW9XbkZOM3FPeUNzZjBEd2s4ZGotT1BDT3JLMDNUSlN0VVYxRnhuaEJ1UFhHWnN0U216QWc?oc=5",
-      "date": "Fri, 27 Nov 2026 12:00:00 GMT",
+      "title": "New Big Boy in Middleburg Heights ransacked & left with natural gas leak - Cleveland.com",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQeUFYMVhvTTZVUWIwV1Ztdm5fRmR0UGQ0VUJQeHo1Wk15Q1F5eHdkVjNWMTEzRGthS1VXVHZjZGZsNVNobktjSFV6SlZNZlc2d0R0T2R0bTdibEJRRWRvZll2dHhHYm9qQ0lOQ3UyRmx6MWpsSE02YVJoRGdYRVkySjhuLUxXcktoZlR0ODAwTzhlWlFkNkc0c0pyMXdWaDNBcGZFbFlqamRtRGNjNk94RkdwRUFvejVrei1J?oc=5",
+      "date": "Fri, 27 Nov 2026 15:23:00 GMT",
       "sentiment": "NEUTRAL"
     }
   ]
