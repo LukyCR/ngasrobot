@@ -1,5 +1,5 @@
 {
-  "updated_at": "27.11.2026 00:44 SEČ",
+  "updated_at": "27.11.2026 01:51 SEČ",
   "symbol": "NG=F (Henry Hub Futures)",
   "price": 3.68,
   "change_pct": 12.57,
@@ -54,7 +54,7 @@
   "reasons": [
     {
       "type": "bull",
-      "text": "Denní trend (D1) je býčí: cena (3.680) je nad D1 EMA50 (3.098)."
+      "text": "Denní trend (D1) je býčí: cena (3.680) je nad D1 EMA50 (3.097)."
     },
     {
       "type": "bull",
@@ -80,15 +80,15 @@
   "warnings": [],
   "news": [
     {
-      "title": "Bridging the Grid: Solar, Storage, and Natural Gas Solutions - Mexico Business News",
-      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQejNnUlBRS3M0Z2lENVRTNWktaGxrLUF4akI3bHhRU01sVEFGUHhlQWwxQnZGN09wdEpMMFJjbDRlY3M5aDdtdXNUdmxUckcwWGFYNWtlZjNKbGlsVEFPSFI1WEV4SlRkczljSVBpY3RReTZfd0txOGlBQjE3NG1FMDVSUGpxWjJDMDF0QXlNZDBNQ2p2WjFTZQ?oc=5",
-      "date": "Thu, 26 Nov 2026 17:04:07 GMT",
-      "sentiment": "NEUTRAL"
-    },
-    {
       "title": "Barchart- Is Natural Gas Inexpensive? - Barchart.com",
       "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPZUxWS1ZWUFpERFlSSXlGRHJjRXR5Y1ZOUmJWT3BVbTdRYUZxdWpYRlFNTW92U2dMRWlfYTUxZk9FT1ZVME1aQk44UGN5OTVzWndBc1ZxUlNFcGNySUM2em05ZVloakFvUlJXOUljc0xWeHFMYnd5NEs4N2ItOEN0UXpTbkNTUQ?oc=5",
       "date": "Thu, 26 Nov 2026 15:00:02 GMT",
+      "sentiment": "NEUTRAL"
+    },
+    {
+      "title": "Bridging the Grid: Solar, Storage, and Natural Gas Solutions - Mexico Business News",
+      "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQejNnUlBRS3M0Z2lENVRTNWktaGxrLUF4akI3bHhRU01sVEFGUHhlQWwxQnZGN09wdEpMMFJjbDRlY3M5aDdtdXNUdmxUckcwWGFYNWtlZjNKbGlsVEFPSFI1WEV4SlRkczljSVBpY3RReTZfd0txOGlBQjE3NG1FMDVSUGpxWjJDMDF0QXlNZDBNQ2p2WjFTZQ?oc=5",
+      "date": "Thu, 26 Nov 2026 17:04:07 GMT",
       "sentiment": "NEUTRAL"
     },
     {
@@ -110,21 +110,21 @@
       "sentiment": "NEUTRAL"
     },
     {
-      "title": "Can Rising LNG Exports Unlock Appalachian Natural Gas Growth? - Zacks Investment Research",
-      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQbEQxMVltX08wSzhQYmVqaHdCU3BjZWZLVndPdW9QaktNTnMwVHRMRmVOcU1nSVdTNWh2bm1rSFBSYzFMbmNUNGdIZGtFdnNXYjMtZTdYaElRYm0yVm1vTDV0WFQ1MkdGY3FtNExXdGFHdUU5MnB5b241WWR5VndWeTZYSUIzSjlGVDNQb0pEejBMdHBYYW9CQXNEZElIZU56cnBB?oc=5",
-      "date": "Thu, 26 Nov 2026 17:11:13 GMT",
-      "sentiment": "NEUTRAL"
-    },
-    {
-      "title": "The Download: Better bionic hands and AI’s natural-gas boom - MIT Technology Review",
-      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQWXB4SldrakZfQ3FITmZzVTdVNFRtZWZzVGZ5bV9IMkxFZFlfdlF4OUdFU3BsLTVCWmx6cHpCR2dkV1NPVGExbWRGaF85TVd6aExxOVVMLVkzOEVsaHlOa0QzN0dVSzYwR2pwdEo0XzRaekRlY1RyQXZ5d3UyMG1CTEpjSmhqNFJTYlh2eHNTYmdvX3BOVVEtWEFqUVVlU3Z0ZDRhajN6MFTSAa4BQVVfeXFMUHlBOXJIQUVIQ1o3SlVrOWNfc0tyOURLWFlWeHJoc3p0TWZHeFFRV0F1MzE3YUlZV1p6djBHc1QxTi12S25wYVgwLVFJQUxnUThUTmgxellIZk1ETWVGOTgyMU43WXVsRjhNdkI4S3hiRVlpcHFsbDVBd0dNQlpFeVVqNDJFY0Z2clRDTEtMMkFsMUNiLUdWYnl4UG1WRWZkenA5SjA2Z2NibUxoMkln?oc=5",
-      "date": "Thu, 26 Nov 2026 13:10:00 GMT",
+      "title": "India's state-owned natural gas company seeks investment partner for data center project - Data Center Dynamics",
+      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQR0lNcGFPVnk3eGg2NlVVLVpJNEpPSUZMWTRxUktSVVZNTi1DbnJyMDRoWTRjM2FzTkhhZ294cWZqT2V3Z2ItQ0FzSVdiX05fak8wb1FiQmU2SWw0Sm8yNE5TY3U1NFkwc2k2NnVPRVZzMklZaGs4b0VFb3I3cnVpVGJ6WXRfRVBzV1A1Mld5V1FEbHdUMmp4WnEyaTFHQzNpRjRyY3R6ZnFxWjFqdzE1dVNQYVRONURNblVGSk1jWlBneVhrVFI4TUxaNA?oc=5",
+      "date": "Thu, 26 Nov 2026 12:49:05 GMT",
       "sentiment": "NEUTRAL"
     },
     {
       "title": "More than 200,000 plug-in carbon monoxide and natural gas detectors recalled - rocketcitynow.com",
       "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOakpwdmdOWnpkaG14cUJZMXZDcnVzY0tMVDRhY2cyREVwaFJidm9wZG1KVUtQUENMQUsxV1pobFlSRXVYSVZZTTU2V2hxWWxWdWQ2dWVablVuZ1l0ak1Ya0o1d01tR3hjR2dHb05PMDVyVk9ZQzJXRExVUGdheEludDV0NmJWWXh5QXFfbVRPS1pFX3lhNzVmVzdJUGdwcWgwcC1ZY1FQRmxoS1NRejJCbU0xaGlwYmN1UHJmd2hLWGJJZDF1MHgwbzZTazE0dkpBeC1SVTZTVlBGNkhKWElycXVPOUc4ejFXelEydGpCYXF5bVloS2pVOHhWNU45azNWSEE?oc=5",
       "date": "Thu, 26 Nov 2026 21:47:00 GMT",
+      "sentiment": "NEUTRAL"
+    },
+    {
+      "title": "The Download: Better bionic hands and AI’s natural-gas boom - MIT Technology Review",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQWXB4SldrakZfQ3FITmZzVTdVNFRtZWZzVGZ5bV9IMkxFZFlfdlF4OUdFU3BsLTVCWmx6cHpCR2dkV1NPVGExbWRGaF85TVd6aExxOVVMLVkzOEVsaHlOa0QzN0dVSzYwR2pwdEo0XzRaekRlY1RyQXZ5d3UyMG1CTEpjSmhqNFJTYlh2eHNTYmdvX3BOVVEtWEFqUVVlU3Z0ZDRhajN6MFTSAa4BQVVfeXFMUHlBOXJIQUVIQ1o3SlVrOWNfc0tyOURLWFlWeHJoc3p0TWZHeFFRV0F1MzE3YUlZV1p6djBHc1QxTi12S25wYVgwLVFJQUxnUThUTmgxellIZk1ETWVGOTgyMU43WXVsRjhNdkI4S3hiRVlpcHFsbDVBd0dNQlpFeVVqNDJFY0Z2clRDTEtMMkFsMUNiLUdWYnl4UG1WRWZkenA5SjA2Z2NibUxoMkln?oc=5",
+      "date": "Thu, 26 Nov 2026 13:10:00 GMT",
       "sentiment": "NEUTRAL"
     }
   ]
