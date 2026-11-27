@@ -1,5 +1,5 @@
 {
-  "updated_at": "27.11.2026 22:23 SEČ",
+  "updated_at": "27.11.2026 23:24 SEČ",
   "symbol": "NG=F (Henry Hub Futures)",
   "price": 3.509,
   "change_pct": 7.34,
@@ -88,15 +88,15 @@
       "sentiment": "BEARISH"
     },
     {
-      "title": "NOPEC Announces January 2027 Natural Gas Rates - City of Mentor, Ohio",
-      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBoU3h2QTB0LVQ5d2draG1OS0ZNcEowNm5wM3ZRQlZQOUNXT2ZCckZEMk03OVVCS3hPRWxqSW1MRWR6VzZmMFNod3hxZ0lCbmo1LXJqQV9oUVhOY0hvYkNtckZMSDM1TWtpTGRRa1RQS3JRZw?oc=5",
-      "date": "Fri, 27 Nov 2026 14:37:59 GMT",
-      "sentiment": "NEUTRAL"
-    },
-    {
       "title": "Russian domestic natural gas price may complicate talks with China, analyst says - Reuters",
       "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQNHJSUDNXTTVWWEpBdmZJMEhFc2V2THkwZm5aYm1WLXhKRG9kYkl0V1g4V0oxeHNTZkVIQnZiX0sxOWM5ME85Q2RMUDlHSDZMQVM3dTB4MFZQa1VPbkEyOUI5b2VnV0EyXzRlUldCYl9MV2JiUzJPcHc1cnF4OXBPZHBIVjVxdU5TUnByaGdidjZwUGFPdFZJNUJjUkZUcTNHT0otNlVDZklOTmRxc3NHM2w2aHIyTnJPeTgxaGRJamI4X0tkcV93c0ZFUQ?oc=5",
       "date": "Fri, 27 Nov 2026 12:21:45 GMT",
+      "sentiment": "NEUTRAL"
+    },
+    {
+      "title": "NOPEC Announces January 2027 Natural Gas Rates - City of Mentor, Ohio",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBoU3h2QTB0LVQ5d2draG1OS0ZNcEowNm5wM3ZRQlZQOUNXT2ZCckZEMk03OVVCS3hPRWxqSW1MRWR6VzZmMFNod3hxZ0lCbmo1LXJqQV9oUVhOY0hvYkNtckZMSDM1TWtpTGRRa1RQS3JRZw?oc=5",
+      "date": "Fri, 27 Nov 2026 14:37:59 GMT",
       "sentiment": "NEUTRAL"
     },
     {
@@ -106,9 +106,15 @@
       "sentiment": "NEUTRAL"
     },
     {
-      "title": "Natural Gas Price Forecast: Mild US Weather Drives Prices Lower - FXEmpire",
-      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPM01jeVJYTDM5YkdlMzJJejBSV0NOeUhaVm9YUEhWcXhNWlZpVWJfc2Flbnp0NmRYcjl2bXd3VGM5dUlOSTJ4S2NqMy1UYkVUZkhvWDc1WWJxRWtMN3FBVWswNW9QZzdjbWUzZ213S0MyMVZPUnNuZWRnZjZfR1R6bDI4V243bHl2UjN4VVJHeFJ5cVh6ZzB4TkRibGRZd0dPMEhrYUlNV1RyTk9hSzI2Z2xiaw?oc=5",
-      "date": "Fri, 27 Nov 2026 14:03:07 GMT",
+      "title": "Hedging Henry Hub and Waha Gas Indices Against WEM Power - Mexico Business News",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNMHE1UHlZb25LLTVVbkktNlZKWHBIRE1SaXdMTFRHWjA3NktTM0xJVkExMzJnTUhjRXhMNlYxRFZhb1dHaXcxQS02TkM3d0FNdmJwY2NVZmIyMmVNcW8tdnNCWDdMVGh1ZkxzWVhGaUhCLVdVSGNSakxzRWx4MGdVeFJRNEU1OG1CWVlBLVdpN1dLRHBfa1dXXy1sTTM?oc=5",
+      "date": "Fri, 27 Nov 2026 21:27:19 GMT",
+      "sentiment": "NEUTRAL"
+    },
+    {
+      "title": "Natural Gas Price Forecast: Breakout Holds as Momentum Builds - FXEmpire",
+      "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNSWlKMHhwUThkbXVWRkVHakgySjJuQmIxdHlLWE14RjVZZE92WXIzSHM4WVVubnV3OFpSb2JEOXppV1I5aUI0c3lmTUVMSlpJaTZlRVZFRHVaMWRMU21WXzgyVGJHSlZGNlRJQkN2SE9HRG1PTEktV08wNEtNLXd2MklPeE9FQm93aDhJeXdwcmRnNzhYclJNODVWX2xENmowX2ZqcEJnRWNjWVlTdzBPVQ?oc=5",
+      "date": "Fri, 27 Nov 2026 21:58:12 GMT",
       "sentiment": "BEARISH"
     },
     {
@@ -121,12 +127,6 @@
       "title": "New Big Boy in Middleburg Heights ransacked & left with natural gas leak - Cleveland.com",
       "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQeUFYMVhvTTZVUWIwV1Ztdm5fRmR0UGQ0VUJQeHo1Wk15Q1F5eHdkVjNWMTEzRGthS1VXVHZjZGZsNVNobktjSFV6SlZNZlc2d0R0T2R0bTdibEJRRWRvZll2dHhHYm9qQ0lOQ3UyRmx6MWpsSE02YVJoRGdYRVkySjhuLUxXcktoZlR0ODAwTzhlWlFkNkc0c0pyMXdWaDNBcGZFbFlqamRtRGNjNk94RkdwRUFvejVrei1J?oc=5",
       "date": "Fri, 27 Nov 2026 15:23:00 GMT",
-      "sentiment": "NEUTRAL"
-    },
-    {
-      "title": "FERC approves Sabine Pass LNG expansion, four other natural gas projects - BIC Magazine",
-      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQbVlsdmFQcUxrMF93UGwtc1RPbGM2ekNRSGtYOU1MeGc3RVV6a3ZDMkluMjI4Q0tIYTIzQzFhTTlJZnBiU012cVlyMTZfWkhuc0MyY2xPZGVfRGRKWUptTmVZN1lyVUdQRFdLT3VndzBmUDFTSExjVjk3TmNEVjhlbnNFNmN1SHFUTldvM0tMNjNsWEFqMzg3TFltMlc3cDgtNzRLb0JWLVgzeVpyTDI3bk41bTZ3MGtQTkkwUg?oc=5",
-      "date": "Fri, 27 Nov 2026 14:00:00 GMT",
       "sentiment": "NEUTRAL"
     }
   ]
