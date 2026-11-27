@@ -1,5 +1,5 @@
 {
-  "updated_at": "27.11.2026 21:23 SEČ",
+  "updated_at": "27.11.2026 22:23 SEČ",
   "symbol": "NG=F (Henry Hub Futures)",
   "price": 3.509,
   "change_pct": 7.34,
@@ -82,15 +82,21 @@
   ],
   "news": [
     {
-      "title": "Russian domestic natural gas price may complicate talks with China, analyst says - Reuters",
-      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQNHJSUDNXTTVWWEpBdmZJMEhFc2V2THkwZm5aYm1WLXhKRG9kYkl0V1g4V0oxeHNTZkVIQnZiX0sxOWM5ME85Q2RMUDlHSDZMQVM3dTB4MFZQa1VPbkEyOUI5b2VnV0EyXzRlUldCYl9MV2JiUzJPcHc1cnF4OXBPZHBIVjVxdU5TUnByaGdidjZwUGFPdFZJNUJjUkZUcTNHT0otNlVDZklOTmRxc3NHM2w2aHIyTnJPeTgxaGRJamI4X0tkcV93c0ZFUQ?oc=5",
-      "date": "Fri, 27 Nov 2026 12:21:45 GMT",
-      "sentiment": "NEUTRAL"
+      "title": "U.S. Natural Gas Futures Fall as Front Month Shifts to January - WSJ",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPeVFvRUF3OHZKQ1l5bWJFYmVpQVBGY0F4bXJueTZIVkF6WjlzMnVUc0RNczF2ZVM5SEFFUUZDc2IxSUxZRlVRdHRRWVJCNDlpSDFsbmNja1Q3Sk0yWWNvQjNjRlJDc3RmUW9Sc3liOXY1Z1ZaU2dycUJQZmtxYTA1WTNucmRPVGcxaVIzMk5DRDF1a2JGLWFTR2tNMEJiMzdESWZpWVJPRVhOVW1EamN6Zm9nZ2hZTVgxbUE?oc=5",
+      "date": "Fri, 27 Nov 2026 14:35:42 GMT",
+      "sentiment": "BEARISH"
     },
     {
       "title": "NOPEC Announces January 2027 Natural Gas Rates - City of Mentor, Ohio",
       "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFBoU3h2QTB0LVQ5d2draG1OS0ZNcEowNm5wM3ZRQlZQOUNXT2ZCckZEMk03OVVCS3hPRWxqSW1MRWR6VzZmMFNod3hxZ0lCbmo1LXJqQV9oUVhOY0hvYkNtckZMSDM1TWtpTGRRa1RQS3JRZw?oc=5",
       "date": "Fri, 27 Nov 2026 14:37:59 GMT",
+      "sentiment": "NEUTRAL"
+    },
+    {
+      "title": "Russian domestic natural gas price may complicate talks with China, analyst says - Reuters",
+      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQNHJSUDNXTTVWWEpBdmZJMEhFc2V2THkwZm5aYm1WLXhKRG9kYkl0V1g4V0oxeHNTZkVIQnZiX0sxOWM5ME85Q2RMUDlHSDZMQVM3dTB4MFZQa1VPbkEyOUI5b2VnV0EyXzRlUldCYl9MV2JiUzJPcHc1cnF4OXBPZHBIVjVxdU5TUnByaGdidjZwUGFPdFZJNUJjUkZUcTNHT0otNlVDZklOTmRxc3NHM2w2aHIyTnJPeTgxaGRJamI4X0tkcV93c0ZFUQ?oc=5",
+      "date": "Fri, 27 Nov 2026 12:21:45 GMT",
       "sentiment": "NEUTRAL"
     },
     {
@@ -106,27 +112,21 @@
       "sentiment": "BEARISH"
     },
     {
-      "title": "Iran, Turkey Extend Natural Gas Deal - Rigzone",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOdm1xcDRDemVocUpjZDd2MG1WN0NRendNVDh1bmVJQmpyTTdxRm9wbUVubk5yYThMYUZqejNsZkh5bTQyeE96Q2xtblVuS2pMSDAzT0RKeHNJb25rR1dsXzJuVlcwZ196V1J4OVlZMHNkZGxvbmVlcmlwSE9zNXppZTV1MXFZU0FTTjhZU1I3djBIQTE0NmZVZEJNTC1VZw?oc=5",
-      "date": "Fri, 27 Nov 2026 15:48:00 GMT",
-      "sentiment": "NEUTRAL"
-    },
-    {
-      "title": "US natural gas futures drop 5% as warmer weather outlook curbs heating demand - marketscreener.com",
-      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNdG41V0pHeG9MQVdkRWllSWxRSFY1TmZSb1UxakkwTms4eDBybjlOaFdHTmozMXYtdDdTZm1VdHVjLWJObGNTNGhJcXNBekRfUFdnOHlYT1ViNWpxZEVCQXNDTHFVRk1iMFVKcWYtVmJQRExlLXNRcjkweERWNjBycDlMXzc5RDl6NGI5THhLZ01Iak4yUlBRVlo0RjFmRWdwOW9iVHV1cmkycFFlaHhoS2dZbVZPbTRxTGd0cExJWWdtMkFMUFpaWA?oc=5",
-      "date": "Fri, 27 Nov 2026 15:16:45 GMT",
-      "sentiment": "BEARISH"
-    },
-    {
-      "title": "FERC approves Sabine Pass LNG expansion, four other natural gas projects - BIC Magazine",
-      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQbVlsdmFQcUxrMF93UGwtc1RPbGM2ekNRSGtYOU1MeGc3RVV6a3ZDMkluMjI4Q0tIYTIzQzFhTTlJZnBiU012cVlyMTZfWkhuc0MyY2xPZGVfRGRKWUptTmVZN1lyVUdQRFdLT3VndzBmUDFTSExjVjk3TmNEVjhlbnNFNmN1SHFUTldvM0tMNjNsWEFqMzg3TFltMlc3cDgtNzRLb0JWLVgzeVpyTDI3bk41bTZ3MGtQTkkwUg?oc=5",
-      "date": "Fri, 27 Nov 2026 14:00:00 GMT",
+      "title": "More than 1,000 new jobs could be headed to east Houston suburb - Chron",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPNlBqbzYtdGh4SlREYTA0b1RzTm9xa2cySDdBS3FmWHdmOWRPZ1p6aW5kcGVkVDR4WEkySjhFS2pSZ3lLUk5mbWFqeVdsRW01OXZna3FxT2FYQVFxR1NPSncxWWtHWlhyeWFuUDFFNVlNVndadG0zYjFvbUk1bXBKUjRWNmlFT2FWVHc?oc=5",
+      "date": "Fri, 27 Nov 2026 20:05:57 GMT",
       "sentiment": "NEUTRAL"
     },
     {
       "title": "New Big Boy in Middleburg Heights ransacked & left with natural gas leak - Cleveland.com",
       "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQeUFYMVhvTTZVUWIwV1Ztdm5fRmR0UGQ0VUJQeHo1Wk15Q1F5eHdkVjNWMTEzRGthS1VXVHZjZGZsNVNobktjSFV6SlZNZlc2d0R0T2R0bTdibEJRRWRvZll2dHhHYm9qQ0lOQ3UyRmx6MWpsSE02YVJoRGdYRVkySjhuLUxXcktoZlR0ODAwTzhlWlFkNkc0c0pyMXdWaDNBcGZFbFlqamRtRGNjNk94RkdwRUFvejVrei1J?oc=5",
       "date": "Fri, 27 Nov 2026 15:23:00 GMT",
+      "sentiment": "NEUTRAL"
+    },
+    {
+      "title": "FERC approves Sabine Pass LNG expansion, four other natural gas projects - BIC Magazine",
+      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQbVlsdmFQcUxrMF93UGwtc1RPbGM2ekNRSGtYOU1MeGc3RVV6a3ZDMkluMjI4Q0tIYTIzQzFhTTlJZnBiU012cVlyMTZfWkhuc0MyY2xPZGVfRGRKWUptTmVZN1lyVUdQRFdLT3VndzBmUDFTSExjVjk3TmNEVjhlbnNFNmN1SHFUTldvM0tMNjNsWEFqMzg3TFltMlc3cDgtNzRLb0JWLVgzeVpyTDI3bk41bTZ3MGtQTkkwUg?oc=5",
+      "date": "Fri, 27 Nov 2026 14:00:00 GMT",
       "sentiment": "NEUTRAL"
     }
   ]
