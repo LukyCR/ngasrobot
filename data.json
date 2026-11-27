@@ -1,26 +1,26 @@
 {
-  "updated_at": "27.11.2026 15:12 SEČ",
+  "updated_at": "27.11.2026 16:24 SEČ",
   "symbol": "NG=F (Henry Hub Futures)",
-  "price": 3.68,
-  "change_pct": 12.57,
-  "signal": "LONG",
-  "action_cz": "OTEVŘÍT LONG (KOUPIT)",
-  "score": 47,
+  "price": 3.523,
+  "change_pct": 7.77,
+  "signal": "NEUTRAL",
+  "action_cz": "ČEKAT (NEOTEVÍRAT POZICI)",
+  "score": 2,
   "plan": {
-    "entry": 3.68,
-    "sl": 3.631,
-    "tp1": 3.746,
-    "tp2": 3.795,
-    "rrr": 1.33,
-    "note": "Hledej vstup poblíž aktuální ceny nebo při retestu EMA20 (3.666)."
+    "entry": 3.523,
+    "sl": 3.196,
+    "tp1": 3.371,
+    "tp2": 3.473,
+    "rrr": 0,
+    "note": "Trh nemá jasnou převahu. Čekej na průraz R1 (3.371) pro Long nebo S1 (3.196) pro Short."
   },
   "indicators": {
-    "ema20": 3.666,
-    "ema50": 3.636,
+    "ema20": 3.653,
+    "ema50": 3.632,
     "ema200": 3.454,
-    "rsi": 55.4,
-    "macd": 0.0111,
-    "atr": 0.033
+    "rsi": 29.5,
+    "macd": -0.0017,
+    "atr": 0.045
   },
   "levels": {
     "r2": 3.473,
@@ -54,23 +54,23 @@
   "reasons": [
     {
       "type": "bull",
-      "text": "Denní trend (D1) je býčí: cena (3.680) je nad D1 EMA50 (3.094)."
+      "text": "Denní trend (D1) je býčí: cena (3.523) je nad D1 EMA50 (3.095)."
     },
     {
-      "type": "bull",
-      "text": "Býčí intradenní struktura H1: cena > EMA20 (3.666) > EMA50 (3.636)."
+      "type": "neutral",
+      "text": "H1 klouzavé průměry EMA20/EMA50 jsou v konsolidaci."
     },
     {
       "type": "bull",
       "text": "Cena se drží nad H1 EMA200 (3.454)."
     },
     {
-      "type": "bull",
-      "text": "RSI (14) na H1 je 55.4 – zdravé nákupní momentum."
+      "type": "neutral",
+      "text": "RSI (14) na H1 je neutrální (29.5)."
     },
     {
-      "type": "neutral",
-      "text": "MACD na H1 nedává jasné zrychlení."
+      "type": "bear",
+      "text": "MACD na H1 klesá pod signální linií (prodejní momentum)."
     },
     {
       "type": "bear",
@@ -81,6 +81,12 @@
     "Otevírá se hlavní US seance (14:30–16:00 SEČ) – očekávej vyšší volatilitu."
   ],
   "news": [
+    {
+      "title": "U.S. Natural Gas Futures Fall as Front Month Shifts to January - WSJ",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPeVFvRUF3OHZKQ1l5bWJFYmVpQVBGY0F4bXJueTZIVkF6WjlzMnVUc0RNczF2ZVM5SEFFUUZDc2IxSUxZRlVRdHRRWVJCNDlpSDFsbmNja1Q3Sk0yWWNvQjNjRlJDc3RmUW9Sc3liOXY1Z1ZaU2dycUJQZmtxYTA1WTNucmRPVGcxaVIzMk5DRDF1a2JGLWFTR2tNMEJiMzdESWZpWVJPRVhOVW1EamN6Zm9nZ2hZTVgxbUE?oc=5",
+      "date": "Fri, 27 Nov 2026 14:35:00 GMT",
+      "sentiment": "BEARISH"
+    },
     {
       "title": "Russian domestic natural gas price may complicate talks with China, analyst says - Reuters",
       "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQNHJSUDNXTTVWWEpBdmZJMEhFc2V2THkwZm5aYm1WLXhKRG9kYkl0V1g4V0oxeHNTZkVIQnZiX0sxOWM5ME85Q2RMUDlHSDZMQVM3dTB4MFZQa1VPbkEyOUI5b2VnV0EyXzRlUldCYl9MV2JiUzJPcHc1cnF4OXBPZHBIVjVxdU5TUnByaGdidjZwUGFPdFZJNUJjUkZUcTNHT0otNlVDZklOTmRxc3NHM2w2aHIyTnJPeTgxaGRJamI4X0tkcV93c0ZFUQ?oc=5",
@@ -106,15 +112,9 @@
       "sentiment": "NEUTRAL"
     },
     {
-      "title": "More than 200K carbon monoxide, natural gas detectors recalled - KHOU",
-      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPZ3hEeUppS2FSX2lsTDFDdy14aVFqdktLbklvT1VkWFdxMU1ESTNnb0FJMWdyV0t2UkdSNXgtQUhCbXQ4Y3NybTlYa2JIMk9yZE8tZWtRYU9rQl9JQ3BwT0NZd2hLMG9FRFJhMTVMUnNXRThjOTNKaU13WVhEb3phN0FIT29iZlR0S3RaamlFNVJaRjNNT0lIS2dBQTNHaFNQeUVudUI2MFBON0sxS2t5M3RNeDVXaTJHQlRoQm1EOXhYZ3Y5bmo2eE52b0hUV0NiQU9SM1BXQjM?oc=5",
-      "date": "Fri, 27 Nov 2026 13:00:09 GMT",
-      "sentiment": "NEUTRAL"
-    },
-    {
-      "title": "'We just don't want to be bothered': Natural gas pipeline could cut through 100 acres of a Tennessee Century Farm - News Channel 5 Nashville",
-      "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOOEo3SURCRjZEYmxuU2l2cWpGaHF2NUNvbHpvQ1NZTzc3UjdzUFQxNlNHVXd6eHdhYjQ5MmtnWGRNUXQwc2pnMGQ4Z1FmVUtXRi1wcm1pWnVMNTNxWkM0ckI3bnkyVzEzZndaVXBHVWtPSXYtVUdZeTJyWnJPMHlnT21mMmZCWEptQUg0NnFfbWxJMXJlWFotcEZEQ245QjhBV3hvOE9IOVNWQkctNTRmUXcxb0VtZU1ZYXBCU2o1MV9RUmN4UmxhSlV5dXkwY0JQMTN1YjkycnplNl9TNTdVZHF5Uzg?oc=5",
-      "date": "Fri, 27 Nov 2026 11:04:40 GMT",
+      "title": "How data centers are driving a US natural-gas boom - MIT Technology Review",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNZkd0cUJhM0U1VVU5S2FUbHVVbV9QdUZxTUlDX1RncmtNeEtpb1ZIR04yZHFhRHFNM0dwaXJMQ3FGRHJPVDJ1V2ZlXzFnLU1oUWtFTGs3MU5JZHBxeE1MVFVTaEVENm5DVzJxYnVTaV9zR1ZnY1dRQVBSdWtlaE5HSS1Ld3A1Wm5YT1HSAY8BQVVfeXFMUHl1VjVtUmtTQlhoYTdUc0lDdmVqa09vZFhJR2RoV3VwOXNLdDdwOE1Ickg3WnlvS2hEX0RyTTRwNy1aTzNicjFhVjBhbURLYU45d1AwM0I2WmtiX3BFUV9SV2ktMFp3dnZMcURkcGtNMkNxZnVwbFdGTWtwVjl2OEhGai03UjdUQmdXaVFNQWs?oc=5",
+      "date": "Wed, 25 Nov 2026 17:00:00 GMT",
       "sentiment": "NEUTRAL"
     },
     {
@@ -124,9 +124,9 @@
       "sentiment": "NEUTRAL"
     },
     {
-      "title": "More than 200,000 plug-in carbon monoxide and natural gas detectors recalled - rocketcitynow.com",
-      "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOakpwdmdOWnpkaG14cUJZMXZDcnVzY0tMVDRhY2cyREVwaFJidm9wZG1KVUtQUENMQUsxV1pobFlSRXVYSVZZTTU2V2hxWWxWdWQ2dWVablVuZ1l0ak1Ya0o1d01tR3hjR2dHb05PMDVyVk9ZQzJXRExVUGdheEludDV0NmJWWXh5QXFfbVRPS1pFX3lhNzVmVzdJUGdwcWgwcC1ZY1FQRmxoS1NRejJCbU0xaGlwYmN1UHJmd2hLWGJJZDF1MHgwbzZTazE0dkpBeC1SVTZTVlBGNkhKWElycXVPOUc4ejFXelEydGpCYXF5bVloS2pVOHhWNU45azNWSEE?oc=5",
-      "date": "Thu, 26 Nov 2026 21:47:00 GMT",
+      "title": "More than 200K carbon monoxide, natural gas detectors recalled - KHOU",
+      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPZ3hEeUppS2FSX2lsTDFDdy14aVFqdktLbklvT1VkWFdxMU1ESTNnb0FJMWdyV0t2UkdSNXgtQUhCbXQ4Y3NybTlYa2JIMk9yZE8tZWtRYU9rQl9JQ3BwT0NZd2hLMG9FRFJhMTVMUnNXRThjOTNKaU13WVhEb3phN0FIT29iZlR0S3RaamlFNVJaRjNNT0lIS2dBQTNHaFNQeUVudUI2MFBON0sxS2t5M3RNeDVXaTJHQlRoQm1EOXhYZ3Y5bmo2eE52b0hUV0NiQU9SM1BXQjM?oc=5",
+      "date": "Fri, 27 Nov 2026 13:00:09 GMT",
       "sentiment": "NEUTRAL"
     }
   ]
