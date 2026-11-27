@@ -1,13 +1,13 @@
 {
-  "updated_at": "27.11.2026 23:24 SEČ",
+  "updated_at": "28.11.2026 00:20 SEČ",
   "symbol": "NG=F (Henry Hub Futures)",
-  "price": 3.509,
-  "change_pct": 7.34,
+  "price": 3.507,
+  "change_pct": 7.28,
   "signal": "NEUTRAL",
   "action_cz": "ČEKAT (NEOTEVÍRAT POZICI)",
   "score": -16,
   "plan": {
-    "entry": 3.509,
+    "entry": 3.507,
     "sl": 3.196,
     "tp1": 3.371,
     "tp2": 3.473,
@@ -15,11 +15,11 @@
     "note": "Trh nemá jasnou převahu. Čekej na průraz R1 (3.371) pro Long nebo S1 (3.196) pro Short."
   },
   "indicators": {
-    "ema20": 3.617,
+    "ema20": 3.616,
     "ema50": 3.618,
     "ema200": 3.456,
-    "rsi": 29.7,
-    "macd": -0.0271,
+    "rsi": 29.5,
+    "macd": -0.0273,
     "atr": 0.041
   },
   "levels": {
@@ -54,11 +54,11 @@
   "reasons": [
     {
       "type": "bull",
-      "text": "Denní trend (D1) je býčí: cena (3.509) je nad D1 EMA50 (3.093)."
+      "text": "Denní trend (D1) je býčí: cena (3.507) je nad D1 EMA50 (3.093)."
     },
     {
       "type": "bear",
-      "text": "Medvědí intradenní struktura H1: cena < EMA20 (3.617) < EMA50 (3.618)."
+      "text": "Medvědí intradenní struktura H1: cena < EMA20 (3.616) < EMA50 (3.618)."
     },
     {
       "type": "bull",
@@ -66,7 +66,7 @@
     },
     {
       "type": "neutral",
-      "text": "RSI (14) na H1 je neutrální (29.7)."
+      "text": "RSI (14) na H1 je neutrální (29.5)."
     },
     {
       "type": "bear",
@@ -78,7 +78,7 @@
     }
   ],
   "warnings": [
-    "Páteční večer: Zvýšené riziko víkendového gapu kvůli novým běhům modelů počasí (GFS/ECMWF)."
+    "Trh je o víkendu zavřený – zobrazují se poslední páteční data."
   ],
   "news": [
     {
