@@ -1,11 +1,11 @@
 {
-  "updated_at": "27.11.2026 13:54 SEČ",
+  "updated_at": "27.11.2026 15:12 SEČ",
   "symbol": "NG=F (Henry Hub Futures)",
   "price": 3.68,
   "change_pct": 12.57,
   "signal": "LONG",
   "action_cz": "OTEVŘÍT LONG (KOUPIT)",
-  "score": 50,
+  "score": 47,
   "plan": {
     "entry": 3.68,
     "sl": 3.631,
@@ -54,7 +54,7 @@
   "reasons": [
     {
       "type": "bull",
-      "text": "Denní trend (D1) je býčí: cena (3.680) je nad D1 EMA50 (3.095)."
+      "text": "Denní trend (D1) je býčí: cena (3.680) je nad D1 EMA50 (3.094)."
     },
     {
       "type": "bull",
@@ -77,24 +77,26 @@
       "text": "Zásoby EIA: +80 Bcf nad 5Y průměrem (Přebytek) (-8 b.)."
     }
   ],
-  "warnings": [],
+  "warnings": [
+    "Otevírá se hlavní US seance (14:30–16:00 SEČ) – očekávej vyšší volatilitu."
+  ],
   "news": [
     {
       "title": "Russian domestic natural gas price may complicate talks with China, analyst says - Reuters",
       "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQNHJSUDNXTTVWWEpBdmZJMEhFc2V2THkwZm5aYm1WLXhKRG9kYkl0V1g4V0oxeHNTZkVIQnZiX0sxOWM5ME85Q2RMUDlHSDZMQVM3dTB4MFZQa1VPbkEyOUI5b2VnV0EyXzRlUldCYl9MV2JiUzJPcHc1cnF4OXBPZHBIVjVxdU5TUnByaGdidjZwUGFPdFZJNUJjUkZUcTNHT0otNlVDZklOTmRxc3NHM2w2aHIyTnJPeTgxaGRJamI4X0tkcV93c0ZFUQ?oc=5",
-      "date": "Fri, 27 Nov 2026 12:21:44 GMT",
+      "date": "Fri, 27 Nov 2026 12:21:45 GMT",
       "sentiment": "NEUTRAL"
+    },
+    {
+      "title": "Natural Gas Price Forecast: Mild US Weather Drives Prices Lower - FXEmpire",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPM01jeVJYTDM5YkdlMzJJejBSV0NOeUhaVm9YUEhWcXhNWlZpVWJfc2Flbnp0NmRYcjl2bXd3VGM5dUlOSTJ4S2NqMy1UYkVUZkhvWDc1WWJxRWtMN3FBVWswNW9QZzdjbWUzZ213S0MyMVZPUnNuZWRnZjZfR1R6bDI4V243bHl2UjN4VVJHeFJ5cVh6ZzB4TkRibGRZd0dPMEhrYUlNV1RyTk9hSzI2Z2xiaw?oc=5",
+      "date": "Fri, 27 Nov 2026 14:03:07 GMT",
+      "sentiment": "BEARISH"
     },
     {
       "title": "Chevron subsidiaries rank first and third on Colorado gas producers list - The Business Journals",
       "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNd1k4QzVEZTZxS0ZIOWVqR1lMeDN6QTRFUkgxLUNFaEtFc0VwT2gtOU52MEN3TWREUWlpamlFaWQxZDlCXzhFeTR5SThfSGFhdUdOWEdtVlk2Y1hTTnVPTS1Gd2Q0b05MTmNVbHR3RW9XbkZOM3FPeUNzZjBEd2s4ZGotT1BDT3JLMDNUSlN0VVYxRnhuaEJ1UFhHWnN0U216QWc?oc=5",
       "date": "Fri, 27 Nov 2026 12:00:00 GMT",
-      "sentiment": "NEUTRAL"
-    },
-    {
-      "title": "Natural Gas Price Forecast: Breakout Faces Critical Support Test - FXEmpire",
-      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOeTB2NmN5M0hxaU9LalppWXNYSHN2aG1heXREVmFVY3ZFSGJVUjBjNVJWT2tyUWVqdDdZWWRSSS1WX0F0YmJUM2tPT2FaSHl2eDYzQkRCYzZTZmRvbUtNXy12UTZBWlIxMlQ1MFNkUnBhZGV5ZS1nRnJ3SzdGVmpkUXFzNWZ3QTlLeGN3Q2hxT1N2d3ZmcDJXR0ZERHFITnI1c0x5VlB0cGxXWnJpN2ZOSXYtd18?oc=5",
-      "date": "Fri, 27 Nov 2026 05:44:00 GMT",
       "sentiment": "NEUTRAL"
     },
     {
@@ -104,9 +106,9 @@
       "sentiment": "NEUTRAL"
     },
     {
-      "title": "How data centers are driving a US natural-gas boom - MIT Technology Review",
-      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNZkd0cUJhM0U1VVU5S2FUbHVVbV9QdUZxTUlDX1RncmtNeEtpb1ZIR04yZHFhRHFNM0dwaXJMQ3FGRHJPVDJ1V2ZlXzFnLU1oUWtFTGs3MU5JZHBxeE1MVFVTaEVENm5DVzJxYnVTaV9zR1ZnY1dRQVBSdWtlaE5HSS1Ld3A1Wm5YT1HSAY8BQVVfeXFMUHl1VjVtUmtTQlhoYTdUc0lDdmVqa09vZFhJR2RoV3VwOXNLdDdwOE1Ickg3WnlvS2hEX0RyTTRwNy1aTzNicjFhVjBhbURLYU45d1AwM0I2WmtiX3BFUV9SV2ktMFp3dnZMcURkcGtNMkNxZnVwbFdGTWtwVjl2OEhGai03UjdUQmdXaVFNQWs?oc=5",
-      "date": "Wed, 25 Nov 2026 17:00:00 GMT",
+      "title": "More than 200K carbon monoxide, natural gas detectors recalled - KHOU",
+      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPZ3hEeUppS2FSX2lsTDFDdy14aVFqdktLbklvT1VkWFdxMU1ESTNnb0FJMWdyV0t2UkdSNXgtQUhCbXQ4Y3NybTlYa2JIMk9yZE8tZWtRYU9rQl9JQ3BwT0NZd2hLMG9FRFJhMTVMUnNXRThjOTNKaU13WVhEb3phN0FIT29iZlR0S3RaamlFNVJaRjNNT0lIS2dBQTNHaFNQeUVudUI2MFBON0sxS2t5M3RNeDVXaTJHQlRoQm1EOXhYZ3Y5bmo2eE52b0hUV0NiQU9SM1BXQjM?oc=5",
+      "date": "Fri, 27 Nov 2026 13:00:09 GMT",
       "sentiment": "NEUTRAL"
     },
     {
@@ -122,9 +124,9 @@
       "sentiment": "NEUTRAL"
     },
     {
-      "title": "US Has More Natural Gas Than It Can Use as War Chokes Global Supply - EnergyNow.com",
-      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOaW9YckZKR1BkZFJLdDZ1bERpSzllSjlmUkV1anV5WXZXRlhaeFJER0NkWmJ2Tm9BeG9SSjUwVjhhV2sxQW4yNFVjQmh1bGZwQk5xSTZUR2M4THBEM0dhQjExSW9IU3BKR3lRb2EtMS0xWklobTF2RzN1SGhBYmJkWUJJc1lqN0Vzcy1iOTdZdnA5T3N6OHk5V2JnLUktYU0?oc=5",
-      "date": "Wed, 25 Nov 2026 15:53:06 GMT",
+      "title": "More than 200,000 plug-in carbon monoxide and natural gas detectors recalled - rocketcitynow.com",
+      "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOakpwdmdOWnpkaG14cUJZMXZDcnVzY0tMVDRhY2cyREVwaFJidm9wZG1KVUtQUENMQUsxV1pobFlSRXVYSVZZTTU2V2hxWWxWdWQ2dWVablVuZ1l0ak1Ya0o1d01tR3hjR2dHb05PMDVyVk9ZQzJXRExVUGdheEludDV0NmJWWXh5QXFfbVRPS1pFX3lhNzVmVzdJUGdwcWgwcC1ZY1FQRmxoS1NRejJCbU0xaGlwYmN1UHJmd2hLWGJJZDF1MHgwbzZTazE0dkpBeC1SVTZTVlBGNkhKWElycXVPOUc4ejFXelEydGpCYXF5bVloS2pVOHhWNU45azNWSEE?oc=5",
+      "date": "Thu, 26 Nov 2026 21:47:00 GMT",
       "sentiment": "NEUTRAL"
     }
   ]
